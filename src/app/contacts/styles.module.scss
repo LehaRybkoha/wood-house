@@ -1,0 +1,17 @@
+.Contacts__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+.Contacts__phone {
+    color: rgb(255, 190, 92) !important;
+}
+
+.Contacts__phones {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}

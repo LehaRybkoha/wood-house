@@ -1,8 +1,11 @@
 import type {Metadata} from 'next';
-import {DEFAULT_BODY_CLASSNAME, Wrapper} from '../components/Wrapper';
+import {Wrapper} from '../components/Wrapper';
 
 import '@gravity-ui/uikit/styles/fonts.css';
 import '@gravity-ui/uikit/styles/styles.css';
+import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import '../styles/custom.scss';
 import '../styles/globals.scss';
 
 export const metadata: Metadata = {
@@ -12,8 +15,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
     return (
-        <html lang="en">
-            <body className={DEFAULT_BODY_CLASSNAME}>
+        <html lang="ru">
+            <body className={'app'}>
                 <Wrapper>{children}</Wrapper>
             </body>
         </html>

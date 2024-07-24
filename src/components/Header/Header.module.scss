@@ -1,0 +1,52 @@
+.Header {
+    background-color: #fafafa;
+    padding: 16px 0;
+    box-shadow: 0px 0.5px 2px 0px rgba(34, 60, 80, 0.2);
+    z-index: 100;
+}
+
+.Header__content {
+    display: flex;
+    align-items: center;
+}
+
+.Header__image {
+    max-width: 95px;
+    margin-right: 24px;
+}
+
+.Header__action {
+    color: #ffffff !important;
+}
+
+.Header__info {
+    display: flex;
+    margin-left: auto;
+    display: flex;
+}
+
+.Header__address {
+    max-width: 215px;
+    margin-right: 16px;
+}
+
+.Header__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+.Header__phoneNumber {
+    margin-bottom: 16px;
+}
+
+.Header__phoneNumberLink {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.Header__contacts {
+    color: var(--g-color-base-brand);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}

@@ -1,0 +1,49 @@
+.HouseCard {
+    position: relative;
+    width: 350px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover .HouseCard__info {
+        top: 20%;
+    }
+}
+
+.HouseCard__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.HouseCard__info {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 85.5%;
+    z-index: 10;
+    transition: top ease 0.3s;
+}
+
+.HouseCard__infoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.HouseCard__icon {
+    color: #e9ae56;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+
+.HouseCard__action {
+    padding: 0 12px;
+    margin-top: 8px;
+}
+
+.HouseCard__actionButton {
+    width: 100%;
+}

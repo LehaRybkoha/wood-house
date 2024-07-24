@@ -1,0 +1,81 @@
+.Home__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px;
+}
+
+.Home__projects {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.Home__quality {
+    padding: 32px;
+    background-color: rgba(241, 165, 51, 0.9);
+    border-radius: 16px;
+}
+
+.Home__qualityIcon {
+    width: 50px;
+    height: 50px;
+    flex: none;
+}
+
+.Home__qualityList {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.Home__qualityItem {
+    display: flex;
+    gap: 32px;
+}
+
+.Home__qualityTitle {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.Home__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.Home__advantages {
+    padding: 32px;
+    background-color: rgba(241, 165, 51, 0.9);
+    border-radius: 16px;
+}
+
+.Home__advantagesTitle {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.Home__advantagesCardTitle {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Home__advantagesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.Home__advantagesCard {
+    display: flex;
+    gap: 32px;
+}
+
+.Home__advantagesCardImage {
+    width: 48px;
+    height: 48px;
+}

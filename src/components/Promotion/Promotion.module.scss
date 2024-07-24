@@ -1,0 +1,52 @@
+.Promotion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 32px;
+}
+
+.Promotion__info {
+    padding: 4px;
+    text-align: right;
+    display: block;
+}
+
+.Promotion__block {
+    position: relative;
+}
+
+.Promotion__title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+}
+
+.Promotion__head {
+    position: absolute;
+    display: flex;
+    top: 10%;
+    right: 0;
+}
+
+.Promotion__info {
+    width: 58px;
+    height: 58px;
+    background-color: #ff952d;
+}
+
+.Promotion__desc {
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+}
+
+.Promotion__image {
+    width: 100%;
+}
+
+.Promotion__descText {
+    font-size: 26px !important;
+    line-height: 1.5;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}

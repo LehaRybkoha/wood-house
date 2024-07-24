@@ -1,0 +1,26 @@
+.Wrapper {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr 40px;
+    grid-template-areas: 'header header' 'menu content' 'footer footer';
+}
+
+.WrapperMenu {
+    grid-area: 'menu';
+    height: 100%;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.WrapperHeader {
+    grid-area: header;
+}
+
+.WrapperContent {
+    grid-area: content;
+}
+
+.WrapperFooter {
+    grid-area: footer;
+}

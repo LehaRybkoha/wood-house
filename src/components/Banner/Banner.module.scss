@@ -1,0 +1,64 @@
+.Banner {
+    position: relative;
+    width: 100%;
+    min-height: 700px;
+}
+
+.Banner__aside {
+    top: 0;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 500px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 25px;
+    border-left: 1px solid #ffffff8c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Banner__asideBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.Banner__title {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    margin-top: 24px;
+    max-width: 440px;
+}
+
+.Banner__info {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    margin-bottom: 16px;
+}
+
+.Banner__link {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    color: rgb(255, 190, 92) !important;
+}
+
+.Banner__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Banner__phones {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.Banner__phone {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.Banner__hint {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+    margin-bottom: 24px;
+}

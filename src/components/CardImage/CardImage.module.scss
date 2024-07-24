@@ -1,0 +1,21 @@
+.CardImage {
+    display: block;
+    width: 350px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0px 0.5px 2px 0px rgba(34, 60, 80, 0.2);
+    text-decoration: none;
+}
+
+.CardImage__imagePic {
+    width: 100%;
+}
+
+.CardImage__content {
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.CardImage__action {
+    margin-top: 32px;
+}
