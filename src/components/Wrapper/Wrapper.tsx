@@ -8,7 +8,7 @@ import {Footer} from '../Footer/Footer';
 import {Header} from '../Header/Header';
 import css from './Wrapper.module.scss';
 
-const DARK = 'dark';
+// const DARK = 'dark';
 const LIGHT = 'light';
 const DEFAULT_THEME = LIGHT;
 
@@ -19,9 +19,10 @@ export type AppProps = {
 };
 
 export const Wrapper: FC<AppProps> = ({children}) => {
-    const [theme, setTheme] = React.useState<Theme>(DEFAULT_THEME);
+    const [theme] = React.useState<Theme>(DEFAULT_THEME);
 
-    const isDark = theme === DARK;
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // const isDark = theme === DARK;
 
     return (
         <ThemeProvider theme={theme}>
