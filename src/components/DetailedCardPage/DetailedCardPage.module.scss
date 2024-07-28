@@ -1,0 +1,93 @@
+.DetailedCardPage {
+    padding: 32px;
+}
+
+.DetailedCardPage__title {
+    margin-bottom: 32px;
+}
+
+.DetailedCardPage__sliderListItemImage {
+    width: 100%;
+}
+
+.DetailedCardPage__sliderListItem {
+    display: block;
+}
+
+.DetailedCardPage__sliderList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.DetailedCardPage__main {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.DetailedCardPage__left {
+    max-width: 50%;
+}
+
+.DetailedCardPage__sliderMainImageImg {
+    width: 100%;
+}
+
+.DetailedCardPage__right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.DetailedCardPage__info {
+    max-width: 600px;
+}
+
+.DetailedCardPage__infoListItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DetailedCardPage__infoList {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.DetailedCardPage__action {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.DetailedCardPage__actionButton {
+    width: 300px;
+}
+
+.DetailedCardPage__desc {
+    margin-top: 200px;
+}
+
+.DetailedCardPage__additional {
+    margin-top: 32px;
+    display: flex;
+    gap: 64px;
+}
+
+.DetailedCardPage__additionalTitle {
+    margin-bottom: 8px;
+}
+
+.DetailedCardPage__bottom {
+    margin-top: 32px;
+}
+
+.DetailedCardPage__details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

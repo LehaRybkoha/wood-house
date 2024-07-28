@@ -316,47 +316,7 @@ export default function Home() {
                         </div>
                     </Card>
                 </div>
-                <div className={'base-block'}>
-                    <Card
-                        view="raised"
-                        type="container"
-                        size="l"
-                        style={{
-                            maxWidth: 1100,
-                        }}
-                    >
-                        <div className={'base-card'}>
-                            <Text
-                                variant="display-2"
-                                color="complementary"
-                                className="main-title"
-                                style={{marginBottom: 16}}
-                            >
-                                Видео о нашей работе
-                            </Text>
-                            <div className="base-videos">
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </Card>
-                </div>
+
                 <div className={'base-block'}>
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>

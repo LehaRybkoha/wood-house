@@ -13,6 +13,7 @@
     "lint": "npm run lint:js && npm run lint:styles && npm run lint:prettier"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@gravity-ui/icons": "^2.10.0",
     "@gravity-ui/uikit": "^5.17.0",
     "bem-cn-lite": "^4.1.0",

@@ -3,7 +3,6 @@ import {
     ChartColumn,
     Diamond,
     Droplet,
-    FolderOpen,
     HeartFill,
     House,
     Magnifier,
@@ -62,11 +61,6 @@ export const Aside: FC<AsideProps> = (props) => {
             name: 'Как заказать',
             url: '/kak-zakazat',
             icon: Magnifier,
-        },
-        {
-            name: 'Видео',
-            url: '/video',
-            icon: FolderOpen,
         },
         {
             name: 'Отзывы',
