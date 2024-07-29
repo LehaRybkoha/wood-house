@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import 'slick-carousel/slick/slick.css';
 import '../styles/custom.scss';
 import '../styles/globals.scss';
+import '../styles/mixins.scss';
 
 export const metadata: Metadata = {
     title: 'Gravity UI – Next.js App Example',

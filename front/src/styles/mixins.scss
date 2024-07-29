@@ -1,0 +1,22 @@
+$xs: 23.5em; // 376px @media (max-width: $xs) {}
+
+$sm: 36em; // (min-width: 576px)
+$md: 48em; // (min-width: 768px)
+$lg: 62em; // (min-width: 992px)
+$gl: 64em; //! gap `lg - xl` (min-width: 1024px)
+$xl: 75em; // (min-width: 1200px)
+
+$breakpoints: (
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+);
+
+@mixin media($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+}
