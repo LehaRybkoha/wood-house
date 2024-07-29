@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "ИМЯ",
+    "area": 144,
+    "price": "1 678 000",
+    "log_size": "6x6",
+    "hallway": "2x6",
+    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+  },
+  {
+    "id": 2,
+    "name": "ИМЯ",
+    "area": 144,
+    "price": "1 678 000",
+    "log_size": "6x6",
+    "hallway": "2x6",
+    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+  },
+  {
+    "id": 3,
+    "name": "ИМЯ",
+    "area": 144,
+    "price": "1 678 000",
+    "log_size": "6x6",
+    "hallway": "2x6",
+    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+  }
+]
