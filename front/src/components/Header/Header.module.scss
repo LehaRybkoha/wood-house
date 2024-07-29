@@ -37,6 +37,12 @@
     color: #ffffff !important;
 }
 
+.Header__action_text {
+    @include media(lg) {
+        display: none;
+    }
+}
+
 .Header__info {
     display: flex;
     margin-left: auto;

@@ -1,7 +1,7 @@
 'use client';
 
 import {Theme, ThemeProvider} from '@gravity-ui/uikit';
-import React, {FC, ReactNode} from 'react';
+import React, {FC, ReactNode, useState} from 'react';
 
 import {Aside} from '../Aside/Aside';
 import {Footer} from '../Footer/Footer';
@@ -21,15 +21,21 @@ export type AppProps = {
 export const Wrapper: FC<AppProps> = ({children}) => {
     const [theme] = React.useState<Theme>(DEFAULT_THEME);
 
+    const [isMenuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!isMenuOpen);
+    };
+
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     // const isDark = theme === DARK;
 
     return (
         <ThemeProvider theme={theme}>
             <div className={css.Wrapper}>
-                <Header className={css.WrapperHeader} />
+                <Header className={css.WrapperHeader} toggleMenu={toggleMenu} />
                 <div className={css.WrapperMain}>
-                    <Aside className={css.WrapperMenu} />
+                    <Aside className={`${css.WrapperMenu} ${isMenuOpen ? css.WrapperMenuOpened : ''}`} />
                     <div className={css.WrapperContent}>{children}</div>
                 </div>
                 <Footer className={css.WrapperFooter} />

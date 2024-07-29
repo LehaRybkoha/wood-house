@@ -1,2 +1,44 @@
 .Footer {
+    background-color: #fafafa;
+    padding: 16px 0;
+    box-shadow: 0px -0.5px 2px 0px rgba(34, 60, 80, 0.2);
+    z-index: 100;
+}
+
+.Footer__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer__top {
+}
+
+.Footer__bottom {
+}
+
+.Footer__Copyright {
+    display: block;
+    width: 100%;
+    text-align: end;
+}
+
+.Address__List {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Address__ListItem {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+.Address__ListItemPhone {
+    color: var(--g-color-base-brand);
+    text-decoration: none !important;
+    font-size: 20px !important;
+    padding: 20px 0;
 }
