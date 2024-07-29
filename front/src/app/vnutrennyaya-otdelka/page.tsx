@@ -25,7 +25,7 @@ export default function CutTypes() {
                                 бригада – это команда профессиональных мастеров, которые являются
                                 гражданами Российской Федерации.
                             </Text>
-                            <ImageSlider />
+                            {/* <ImageSlider /> */}
                             <Text variant="body-3" color="dark-complementary" className="base-desc">
                                 Мы готовы провести любые консультации по телефону и примем любые
                                 ваши заявки. Кроме того, Вы можете присылать свои проекты нам на

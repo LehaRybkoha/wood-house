@@ -70,7 +70,7 @@ export default function CutTypes() {
                                     должен подумать о том, что лучше будет использовать при
                                     строительстве технологию рубки бревен «в лапу».
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>
@@ -109,7 +109,7 @@ export default function CutTypes() {
                                     сруб можно с легкостью строить сразу на участке заказчика, что
                                     значительно сократит само время строительства.
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>
@@ -142,7 +142,7 @@ export default function CutTypes() {
                                     на рубку срубов по различным технологиям и выбрать тот вариант,
                                     который подойдет Вам больше всего!
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>

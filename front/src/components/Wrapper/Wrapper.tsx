@@ -28,8 +28,10 @@ export const Wrapper: FC<AppProps> = ({children}) => {
         <ThemeProvider theme={theme}>
             <div className={css.Wrapper}>
                 <Header className={css.WrapperHeader} />
-                <Aside className={css.WrapperMenu} />
-                <div className={css.WrapperContent}>{children}</div>
+                <div className={css.WrapperMain}>
+                    <Aside className={css.WrapperMenu} />
+                    <div className={css.WrapperContent}>{children}</div>
+                </div>
                 <Footer className={css.WrapperFooter} />
             </div>
         </ThemeProvider>

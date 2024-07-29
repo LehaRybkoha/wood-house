@@ -1,6 +1,7 @@
 import {FC} from 'react';
 
-import {Button, Text} from '@gravity-ui/uikit';
+import {Button, Text, Icon} from '@gravity-ui/uikit';
+import {Bars} from '@gravity-ui/icons';
 import cx from 'classnames';
 import Link from 'next/link';
 import css from './Header.module.scss';
@@ -16,6 +17,14 @@ export const Header: FC<HeaderProps> = (props) => {
         <div className={cx(className, css.Header)}>
             <div className="container">
                 <div className={css.Header__content}>
+                    <Button 
+                        className={css.Header__Burger}
+                    >
+                        <Icon 
+                            data={Bars} 
+                            size={50}
+                        />
+                    </Button>
                     <div className={css.Header__logo}>
                         <img
                             className={css.Header__image}
