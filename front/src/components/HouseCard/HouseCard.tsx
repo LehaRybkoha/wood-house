@@ -1,23 +1,26 @@
+import {Bath} from '@/app/bani-iz-sruba/page';
 import {SquareDashed} from '@gravity-ui/icons';
 import {Icon, Text} from '@gravity-ui/uikit';
 import {FC} from 'react';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './HouseCard.module.scss';
 
-export const HouseCard: FC = () => {
+type HouseCardProps = {
+    bath: Bath;
+};
+
+export const HouseCard: FC<HouseCardProps> = (props) => {
+    const {bath} = props;
+
     return (
         <div className={css.HouseCard}>
-            <img
-                className={css.HouseCard__image}
-                src="https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
-                alt=""
-            />
+            <img className={css.HouseCard__image} src={bath.src} alt="" />
             <div className={css.HouseCard__info}>
                 <div className={css.HouseCard__infoBlock}>
                     <div>
                         <Text variant="subheader-1" color="light-primary">
                             <Icon className={css.HouseCard__icon} data={SquareDashed}></Icon>
-                            144
+                            {bath.area}
                         </Text>{' '}
                         <Text color="light-primary" variant="caption-2">
                             м2
@@ -28,7 +31,7 @@ export const HouseCard: FC = () => {
                             цена от{' '}
                         </Text>
                         <Text variant="subheader-2" color="light-primary">
-                            1 678 000 Р
+                            {bath.price} руб.
                         </Text>
                     </div>
                 </div>
@@ -40,7 +43,7 @@ export const HouseCard: FC = () => {
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            90 м2
+                            {bath.area} м2
                         </Text>
                     </div>
                 </div>
@@ -52,19 +55,19 @@ export const HouseCard: FC = () => {
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            6х6 м
+                            {bath.log_size} м
                         </Text>
                     </div>
                 </div>
                 <div className={css.HouseCard__infoBlock}>
                     <div>
                         <Text variant="subheader-1" color="light-primary">
-                            Размер сруба
+                            Веранда
                         </Text>{' '}
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            2х6 м
+                            {bath.hallway} м
                         </Text>
                     </div>
                 </div>

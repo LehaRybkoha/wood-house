@@ -3,7 +3,31 @@ import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
-export default function Baths() {
+export type Bath = {
+    id: number;
+    area: number;
+    price: string;
+    log_size: string;
+    hallway: string;
+    src: string;
+};
+
+async function getData() {
+    const res = await fetch('http://localhost:8080/baths');
+    // The return value is *not* serialized
+    // You can return Date, Map, Set, etc.
+
+    if (!res.ok) {
+        // This will activate the closest `error.js` Error Boundary
+        throw new Error('Failed to fetch data');
+    }
+
+    return res.json();
+}
+
+export default async function Baths() {
+    const baths: Bath[] = await getData();
+
     return (
         <div>
             <div className={css.Baths__content}>
@@ -59,16 +83,9 @@ export default function Baths() {
                                 Проекты бань из бревна
                             </Text>
                             <div className={css.Baths__projects}>
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
+                                {baths.map((item) => (
+                                    <HouseCard key={item.id} bath={item} />
+                                ))}
                             </div>
                         </div>
                     </Card>
@@ -453,60 +470,6 @@ export default function Baths() {
                                 этом пострадает. А "оцилиндровка" окажется, в лучшем случае, из
                                 бревна 22-го диаметра, то есть, толщина стены будет значительно
                                 проигрывать бане ручной рубки.
-                            </Text>
-                        </div>
-                    </Card>
-                </div>
-                <div className={'base-block'}>
-                    <Card view="raised" type="container" size="l">
-                        <div className={'base-card'}>
-                            <Text
-                                variant="display-2"
-                                color="complementary"
-                                className="main-title"
-                                style={{marginBottom: 16}}
-                            >
-                                Видео о банях из сруба
-                            </Text>
-                            <div className="base-videos">
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                                <div className="video video--enabled">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/geS_QAlksdk?rel=0&amp;showinfo=0&amp;autoplay=1"
-                                        className="video__media"
-                                    ></iframe>
-                                </div>
-                            </div>
-                            <Text variant="body-3" color="dark-secondary" className="base-desc">
-                                На практике, бревенчатая баня протапливается до рабочей температуры,
-                                обычной банной печью с каменкой, примерно за 2 часа. Это при
-                                условии, что температура на улице составляет -20'С. Такой эффект
-                                достигается за счет оптимального прогрева сруба относительно,
-                                например, камня. Также, несомненным преимуществом рубленных бань
-                                является то, что внутреннюю отделку можно минимизировать. То есть,
-                                ограничиться укладкой пола, потолка и отделкой парной. Внутренние
-                                стены ошкуриваются, и покрываются специальным составом, который
-                                придаст нужный оттенок.
-                                <br />
-                                <br />
-                                Чаще всего, бани строят с низким потолком: 2 метра 30 сантиметров в
-                                чистой высоте после отделки. Это делается для того, чтобы парную
-                                было проще прогреть и жар лучше удерживался в ней. Ни для кого не
-                                секрет, что по законам физики разогретый воздух поднимается вверх, а
-                                более холодный, наоборот, оседает вниз. Поэтому, если бы в бане был
-                                высокий потолок, то весь жар, ради которого все и затевается -
-                                оставался бы под потолком.
                             </Text>
                         </div>
                     </Card>

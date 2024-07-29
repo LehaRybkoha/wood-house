@@ -4,9 +4,28 @@ import {CardImage} from '@/components/CardImage/CardImage';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Promotion} from '@/components/Promotion/Promotion';
 import {Card, Text} from '@gravity-ui/uikit';
+import {Bath} from './bani-iz-sruba/page';
+import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
-export default function Home() {
+async function getData() {
+    const resBath = await fetch('http://localhost:8080/baths');
+    const resHouse = await fetch('http://localhost:8080/houses');
+
+    if (!resBath.ok || !resHouse.ok) {
+        // This will activate the closest `error.js` Error Boundary
+        throw new Error('Failed to fetch data');
+    }
+
+    const dataBath: Bath[] = await resBath.json();
+    const dataHouses: House[] = await resHouse.json();
+
+    return dataBath.concat(dataHouses);
+}
+
+export default async function Home() {
+    const data = await getData();
+
     return (
         <div className={css.Home}>
             <div className={css.Home__content}>
@@ -324,16 +343,9 @@ export default function Home() {
                                 Проекты бань из бревна
                             </Text>
                             <div className={css.Home__projects}>
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
+                                {data.map((item) => (
+                                    <HouseCard key={item.id} bath={item} />
+                                ))}
                             </div>
                         </div>
                     </Card>

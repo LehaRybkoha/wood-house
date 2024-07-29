@@ -3,7 +3,31 @@ import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
-export default function Houses() {
+export type House = {
+    id: number;
+    area: number;
+    price: string;
+    log_size: string;
+    hallway: string;
+    src: string;
+};
+
+async function getData() {
+    const res = await fetch('http://localhost:8080/houses');
+    // The return value is *not* serialized
+    // You can return Date, Map, Set, etc.
+
+    if (!res.ok) {
+        // This will activate the closest `error.js` Error Boundary
+        throw new Error('Failed to fetch data');
+    }
+
+    return res.json();
+}
+
+export default async function Houses() {
+    const houses: House[] = await getData();
+
     return (
         <div>
             <div className={css.Houses__content}>
@@ -61,16 +85,9 @@ export default function Houses() {
                                 Проекты домов из бревна
                             </Text>
                             <div className={css.Houses__projects}>
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
-                                <HouseCard />
+                                {houses.map((item) => (
+                                    <HouseCard key={item.id} bath={item} />
+                                ))}
                             </div>
                         </div>
                     </Card>
