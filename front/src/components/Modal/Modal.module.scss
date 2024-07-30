@@ -16,7 +16,7 @@
     overflow: hidden;
 
     @include media(sm) {
-        min-width: 100vw;
+        min-width: calc(100vw - 40px);
     }
 }
 

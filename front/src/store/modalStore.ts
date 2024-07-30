@@ -6,5 +6,4 @@ export const modalStore = new Store<{
     isOpen: false
 })
 
-export const openModal = () => modalStore.setState(state => ({ isOpen: true }));
-export const closeModal = () => modalStore.setState(state => ({ isOpen: false }));
+export const toggleModal = (value: boolean) => modalStore.setState(state => ({ isOpen: value }));

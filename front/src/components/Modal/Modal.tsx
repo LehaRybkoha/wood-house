@@ -2,7 +2,7 @@
 
 import {FC} from 'react';
 
-import {modalStore, openModal, closeModal} from '@/store/modalStore';
+import {modalStore, toggleModal} from '@/store/modalStore';
 
 import css from "./Modal.module.scss";
 
@@ -16,7 +16,7 @@ export const Modal: FC = () => {
     return (
         <ModalG 
             open={isOpen} 
-            onClose={closeModal}
+            onClose={() => {toggleModal(false)}}
         >
             <div className={css.Modal__content}>
                 <Text variant='header-1' className={css.Modal__header}>
@@ -45,7 +45,7 @@ export const Modal: FC = () => {
                 </form>
                 <Button 
                     className={css.Modal__closeButton} 
-                    onClick={closeModal}
+                    onClick={() => {toggleModal(false)}}
                 >
                     <Icon data={Xmark} />
                 </Button>

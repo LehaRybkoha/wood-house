@@ -4,7 +4,7 @@ import {Bath} from '@/app/bani-iz-sruba/page';
 import {SquareDashed} from '@gravity-ui/icons';
 import {Icon, Text} from '@gravity-ui/uikit';
 import {FC} from 'react';
-import {modalStore, openModal, closeModal} from '@/store/modalStore';
+import {toggleModal} from '@/store/modalStore';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './HouseCard.module.scss';
 
@@ -75,7 +75,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                 </div>
                 <div className={css.HouseCard__action}>
-                    <ButtonClient view="action" className={css.HouseCard__actionButton} onClick={openModal}>
+                    <ButtonClient view="action" className={css.HouseCard__actionButton} onClick={() => {toggleModal(true)}}>
                         Заказать
                     </ButtonClient>
                 </div>
