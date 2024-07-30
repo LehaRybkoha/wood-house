@@ -1,7 +1,10 @@
+'use client'
+
 import {Bath} from '@/app/bani-iz-sruba/page';
 import {SquareDashed} from '@gravity-ui/icons';
 import {Icon, Text} from '@gravity-ui/uikit';
 import {FC} from 'react';
+import {modalStore, openModal, closeModal} from '@/store/modalStore';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './HouseCard.module.scss';
 
@@ -72,7 +75,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                 </div>
                 <div className={css.HouseCard__action}>
-                    <ButtonClient view="action" className={css.HouseCard__actionButton}>
+                    <ButtonClient view="action" className={css.HouseCard__actionButton} onClick={openModal}>
                         Заказать
                     </ButtonClient>
                 </div>

@@ -1,21 +1,33 @@
 import {FC} from 'react';
 
-import {Button, Text} from '@gravity-ui/uikit';
+import {Button, Text, Icon} from '@gravity-ui/uikit';
+import {Bars, Handset} from '@gravity-ui/icons';
 import cx from 'classnames';
 import Link from 'next/link';
 import css from './Header.module.scss';
 
 type HeaderProps = {
     className: string;
+    toggleMenu: () => void;
 };
 
 export const Header: FC<HeaderProps> = (props) => {
-    const {className} = props;
+    const {className, toggleMenu} = props;
 
     return (
         <div className={cx(className, css.Header)}>
             <div className="container">
                 <div className={css.Header__content}>
+                    <Button 
+                        className={css.Header__Burger} 
+                        size='xl'
+                        onClick={toggleMenu}
+                    >
+                        <Icon 
+                            data={Bars} 
+                            size={30}
+                        />
+                    </Button>
                     <div className={css.Header__logo}>
                         <img
                             className={css.Header__image}
@@ -30,7 +42,10 @@ export const Header: FC<HeaderProps> = (props) => {
                             view="action"
                             pin="circle-circle"
                         >
-                            Заказать звонок
+                            <Icon 
+                                data={Handset}
+                            />
+                            <span className={css.Header__action_text}>Заказать звонок</span>
                         </Button>
                     </div>
                     <div className={css.Header__info}>

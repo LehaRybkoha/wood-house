@@ -84,7 +84,7 @@ export default function Positive() {
                                     Но при отсутствии гарантии, худшем качестве и большем риске, эта
                                     "выгода" становится совершенно не актуальной.
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>

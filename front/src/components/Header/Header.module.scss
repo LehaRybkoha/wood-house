@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .Header {
     background-color: #fafafa;
     padding: 16px 0;
@@ -8,6 +10,22 @@
 .Header__content {
     display: flex;
     align-items: center;
+
+    @include media(lg) {
+        justify-content: space-between;
+    }
+}
+
+.Header__Burger {
+    display: none !important;
+
+    color: var(--g-color-base-brand) !important;
+    min-width: 50px;
+    min-height: 50px;
+
+    @include media(lg) {
+        display: block !important;
+    }
 }
 
 .Header__image {
@@ -19,10 +37,19 @@
     color: #ffffff !important;
 }
 
+.Header__action_text {
+    @include media(lg) {
+        display: none;
+    }
+}
+
 .Header__info {
     display: flex;
     margin-left: auto;
-    display: flex;
+
+    @include media(lg) {
+        display: none;
+    }
 }
 
 .Header__address {

@@ -75,7 +75,7 @@ export default function Order() {
                                     <br />
                                     Во всех остальных случаях доставка рассчитывается индивидуально.
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>

@@ -65,7 +65,7 @@ export default function CutTypes() {
                                     <br />
                                     Стоимости работ указанные в нашем прайс-листе действующие.
                                 </Text>
-                                <ImageSlider />
+                                {/* <ImageSlider /> */}
                             </div>
                         </div>
                     </Card>
