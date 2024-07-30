@@ -19,7 +19,7 @@ export const Header: FC<HeaderProps> = (props) => {
             <div className="container">
                 <div className={css.Header__content}>
                     <Button 
-                        className={css.Header__Burger} 
+                        className={css.Header__burger} 
                         size='xl'
                         onClick={toggleMenu}
                     >
