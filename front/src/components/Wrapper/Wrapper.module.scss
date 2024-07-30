@@ -1,26 +1,31 @@
+@import '../../styles/mixins';
+
 .Wrapper {
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr 40px;
-    grid-template-areas: 'header header' 'menu content' 'footer footer';
+    display: flex;
+    flex-direction: column;
 }
 
 .WrapperMenu {
-    grid-area: 'menu';
-    height: 100%;
+    position: sticky;
+    top: 0;
+    height: fit-content;
     transition: width 0.3s;
     overflow: hidden;
+
+    @include media(lg) {
+        width: 0;
+    }
 }
 
-.WrapperHeader {
-    grid-area: header;
+.WrapperMenuOpened {
+    transition: width 0.3s;
+    width: 250px;
 }
 
-.WrapperContent {
-    grid-area: content;
-}
-
-.WrapperFooter {
-    grid-area: footer;
+.WrapperMain {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    flex-grow: 1;
+    max-width: 100%;
 }

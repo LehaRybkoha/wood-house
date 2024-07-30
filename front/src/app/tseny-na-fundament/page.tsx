@@ -60,7 +60,7 @@ export default function Foundation() {
                                     Во всех остальных случаях доставка рассчитывается индивидуально.
                                 </Text>
                             </div>
-                            <ImageSlider />
+                            {/* <ImageSlider /> */}
                         </div>
                     </Card>
                 </div>

@@ -1,8 +1,14 @@
+@import '../styles/mixins';
+
 .Home__content {
     display: flex;
     flex-direction: column;
     gap: 32px;
     padding: 32px;
+
+    @include media(md) {
+        padding: 5px;
+    }
 }
 
 .Home__projects {
@@ -29,6 +35,7 @@
     gap: 32px;
     justify-content: space-between;
     margin-bottom: 32px;
+    flex-wrap: wrap;
 }
 
 .Home__qualityItem {
@@ -46,6 +53,8 @@
     justify-content: space-between;
     gap: 32px;
     margin-top: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Home__advantages {
@@ -68,6 +77,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+
+    @include media(xl) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .Home__advantagesCard {

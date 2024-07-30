@@ -1,8 +1,14 @@
+@import '../../styles/mixins';
+
 .Promotion {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 32px;
+
+    @include media(md) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .Promotion__info {
@@ -20,6 +26,10 @@
     padding: 0 48px;
     display: flex;
     align-items: center;
+
+    @include media(xl) {
+        padding: 0 20px !important;
+    }
 }
 
 .Promotion__head {
@@ -33,6 +43,11 @@
     width: 58px;
     height: 58px;
     background-color: #ff952d;
+
+    @include media(xl) {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .Promotion__desc {
@@ -49,4 +64,11 @@
     font-size: 26px !important;
     line-height: 1.5;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+
+    @include media(xl) {
+        font-size: 16px !important;
+    }
+    @include media(sm) {
+        font-size: 6px !important;
+    }
 }

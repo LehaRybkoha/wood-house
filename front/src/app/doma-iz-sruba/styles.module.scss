@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .Houses__content {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,10 @@
     display: flex;
     gap: 16px;
     margin-top: 16px;
+
+    @include media(md) {
+        flex-wrap: wrap;
+    }
 }
 
 .Houses__projects {
@@ -16,9 +22,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
 }
 
 .Houses__action {
     width: 100%;
     text-transform: uppercase;
 }
+
+//TODO что-то сделать с видосами

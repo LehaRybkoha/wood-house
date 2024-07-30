@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {Wrapper} from '../components/Wrapper';
+import {Modal} from '../components/Modal/Modal';
 
 import '@gravity-ui/uikit/styles/fonts.css';
 import '@gravity-ui/uikit/styles/styles.css';
@@ -19,6 +20,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <html lang="ru">
             <body className={'app'}>
                 <Wrapper>{children}</Wrapper>
+                <Modal></Modal>
             </body>
         </html>
     );
