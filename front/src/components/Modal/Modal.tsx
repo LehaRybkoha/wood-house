@@ -1,6 +1,6 @@
 'use client';
 
-import {FC} from 'react';
+import {FC, useCallback} from 'react';
 
 import {modalStore, toggleModal} from '@/store/modalStore';
 
@@ -12,11 +12,25 @@ import {useStore} from '@tanstack/react-store';
 
 export const Modal: FC = () => {
     const {isOpen} = useStore(modalStore);
+
+    const handleSubmit = useCallback(async () => {
+        await fetch('https://localhost:8080/submit', {
+            mode: 'no-cors',
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: 'NAMESS',
+                phone: '8009',
+                email: 'mkdlsldf',
+                comment: 'asdasd',
+            }),
+        });
+    }, []);
+
     return (
-        <ModalG 
-            open={isOpen} 
-            onClose={() => toggleModal(false)}
-        >
+        <ModalG open={isOpen} onClose={() => toggleModal(false)}>
             <div className={css.Modal__content}>
                 <Text variant="header-1" className={css.Modal__header}>
                     Заказaть проект
@@ -29,13 +43,10 @@ export const Modal: FC = () => {
                         <TextArea placeholder="Комментарий" minRows={5} maxRows={10}></TextArea>
                     </div>
                     <div className={css.Modal__row}>
-                        <Button>Отправить</Button>
+                        <Button onClick={handleSubmit}>Отправить</Button>
                     </div>
                 </form>
-                <Button 
-                    className={css.Modal__closeButton} 
-                    onClick={() => toggleModal(false)}
-                >
+                <Button className={css.Modal__closeButton} onClick={() => toggleModal(false)}>
                     <Icon data={Xmark} />
                 </Button>
             </div>

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prepare": "cd .. && husky install",
-    "dev": "next dev",
+    "dev": "NODE_TLS_REJECT_UNAUTHORIZED=0 next dev",
     "build": "next build",
     "start": "next start",
     "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
@@ -17,6 +17,7 @@
     "@gravity-ui/icons": "^2.10.0",
     "@gravity-ui/uikit": "^5.17.0",
     "@tanstack/react-store": "^0.5.5",
+    "@tanstack/store": "^0.5.5",
     "bem-cn-lite": "^4.1.0",
     "classnames": "^2.5.1",
     "next": "^14.2.5",

@@ -1,7 +1,13 @@
 import {ButtonClient} from '@/components/ButtonClient/ButtonClient';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Card, Text} from '@gravity-ui/uikit';
+import Link from 'next/link';
 import css from './styles.module.scss';
+
+type BathInfoItem = {
+    title: string;
+    values: string[][];
+};
 
 export type Bath = {
     id: number;
@@ -10,15 +16,16 @@ export type Bath = {
     log_size: string;
     hallway: string;
     src: string;
+    images: string[];
+    information: BathInfoItem[];
+    characteristic: string[];
+    complection: string[];
 };
 
 async function getData() {
-    const res = await fetch('http://localhost:8080/baths');
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
+    const res = await fetch('https://localhost:8080/baths');
 
     if (!res.ok) {
-        // This will activate the closest `error.js` Error Boundary
         throw new Error('Failed to fetch data');
     }
 
@@ -56,22 +63,26 @@ export default async function Baths() {
                                 разработанным для вас нашими дизайнерами.
                             </Text>
                             <div className={css.Baths__actions}>
-                                <ButtonClient
-                                    className={css.Baths__action}
-                                    size="xl"
-                                    view="action"
-                                    pin="circle-circle"
-                                >
-                                    Прайс на бани рубки "в лапу"
-                                </ButtonClient>
-                                <ButtonClient
-                                    className={css.Baths__action}
-                                    size="xl"
-                                    view="action"
-                                    pin="circle-circle"
-                                >
-                                    Прайс на бани рубки "в чашу"
-                                </ButtonClient>
+                                <Link href="/bani-iz-sruba#lap-srub">
+                                    <ButtonClient
+                                        className={css.Baths__action}
+                                        size="xl"
+                                        view="action"
+                                        pin="circle-circle"
+                                    >
+                                        Прайс на бани рубки "в лапу"
+                                    </ButtonClient>
+                                </Link>
+                                <Link href="/bani-iz-sruba#lap-csh">
+                                    <ButtonClient
+                                        className={css.Baths__action}
+                                        size="xl"
+                                        view="action"
+                                        pin="circle-circle"
+                                    >
+                                        Прайс на бани рубки "в чашу"
+                                    </ButtonClient>
+                                </Link>
                             </div>
                         </div>
                     </Card>
@@ -217,7 +228,7 @@ export default async function Baths() {
                         </div>
                     </Card>
                 </div>
-                <div className={'base-block'}>
+                <div className={'base-block'} id="lap-srub">
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text variant="display-2" color="complementary" className="main-title">
@@ -346,7 +357,7 @@ export default async function Baths() {
                         </div>
                     </Card>
                 </div>
-                <div className={'base-block'}>
+                <div className={'base-block'} id="lap-csh">
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text variant="display-2" color="complementary" className="main-title">

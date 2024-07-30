@@ -1,9 +1,9 @@
 import {Store} from '@tanstack/store';
 
 export const modalStore = new Store<{
-    isOpen: boolean
+    isOpen: boolean;
 }>({
-    isOpen: false
-})
+    isOpen: false,
+});
 
-export const toggleModal = (value: boolean) => modalStore.setState(state => ({ isOpen: value }));
+export const toggleModal = (value: boolean) => modalStore.setState(() => ({isOpen: value}));

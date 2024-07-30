@@ -1,5 +1,4 @@
 import {Banner} from '@/components/Banner/Banner';
-import {ImageSlider} from '@/components/ImageSlider/ImageSlider';
 import {Promotion} from '@/components/Promotion/Promotion';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
@@ -28,7 +27,7 @@ export default function Order() {
                                 color="dark-complementary"
                                 className="base-desc"
                             >
-                                Коллектив компании «Русский Сруб» ценит и уважает каждого своего
+                                Коллектив компании «Волжский Дом» ценит и уважает каждого своего
                                 заказчика, поэтому при работе с нами вы можете быть уверены в
                                 прозрачном ценообразовании и процессе работы. Все цены, указанные на
                                 нашем сайте действительны и окончательны.

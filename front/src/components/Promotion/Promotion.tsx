@@ -1,12 +1,13 @@
 import {Text} from '@gravity-ui/uikit';
 import {FC} from 'react';
 
+import Link from 'next/link';
 import css from './Promotion.module.scss';
 
 export const Promotion: FC = () => {
     return (
         <div className={css.Promotion}>
-            <div className={css.Promotion__block}>
+            <Link href="/kredit" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}
                     src="https://moy-srub.ru/images/cred.webp"
@@ -41,11 +42,11 @@ export const Promotion: FC = () => {
                         Хотите заказать сруб и копите? <br /> Купите сейчас и ждите усадку!
                     </Text>
                 </div>
-            </div>
-            <div className={css.Promotion__block}>
+            </Link>
+            <Link href="/rubanok" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}
-                    src="https://moy-srub.ru/images/cred.webp"
+                    src="https://moy-srub.ru/images/rubanok.webp"
                     alt=""
                 />
                 <div className={css.Promotion__head}>
@@ -64,7 +65,7 @@ export const Promotion: FC = () => {
                             color="light-primary"
                             className={css.Promotion__titleText}
                         >
-                            Срубы в кредит
+                            Обработка сруба рубанком
                         </Text>
                     </div>
                 </div>
@@ -74,14 +75,15 @@ export const Promotion: FC = () => {
                         color="light-primary"
                         className={css.Promotion__descText}
                     >
-                        Хотите заказать сруб и копите? <br /> Купите сейчас и ждите усадку!
+                        Закажите сруб сейчас и получите <br />
+                        обработку рубанком бесплатно!
                     </Text>
                 </div>
-            </div>
-            <div className={css.Promotion__block}>
+            </Link>
+            <Link href="/svai" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}
-                    src="https://moy-srub.ru/images/cred.webp"
+                    src="https://moy-srub.ru/images/svai.webp"
                     alt=""
                 />
                 <div className={css.Promotion__head}>
@@ -100,7 +102,7 @@ export const Promotion: FC = () => {
                             color="light-primary"
                             className={css.Promotion__titleText}
                         >
-                            Срубы в кредит
+                            Свайно-винтовой фундамент
                         </Text>
                     </div>
                 </div>
@@ -110,14 +112,15 @@ export const Promotion: FC = () => {
                         color="light-primary"
                         className={css.Promotion__descText}
                     >
-                        Хотите заказать сруб и копите? <br /> Купите сейчас и ждите усадку!
+                        Закажите сруб сейчас и получите <br />
+                        скидку на устройство фундамента!
                     </Text>
                 </div>
-            </div>
-            <div className={css.Promotion__block}>
+            </Link>
+            <Link href="/krovla" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}
-                    src="https://moy-srub.ru/images/cred.webp"
+                    src="https://moy-srub.ru/images/krovlya.webp"
                     alt=""
                 />
                 <div className={css.Promotion__head}>
@@ -136,7 +139,7 @@ export const Promotion: FC = () => {
                             color="light-primary"
                             className={css.Promotion__titleText}
                         >
-                            Срубы в кредит
+                            Кровля из металлочерепицы
                         </Text>
                     </div>
                 </div>
@@ -146,10 +149,11 @@ export const Promotion: FC = () => {
                         color="light-primary"
                         className={css.Promotion__descText}
                     >
-                        Хотите заказать сруб и копите? <br /> Купите сейчас и ждите усадку!
+                        Закажите кровлю сразу со срубом и <br />
+                        получите выгодную скидку на всё
                     </Text>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };

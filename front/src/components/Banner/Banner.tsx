@@ -1,4 +1,5 @@
 import {Text} from '@gravity-ui/uikit';
+import Link from 'next/link';
 import {FC} from 'react';
 
 import css from './Banner.module.scss';
@@ -14,7 +15,7 @@ export const Banner: FC = () => {
             <div className={css.Banner__aside}>
                 <div className={css.Banner__asideBlock}>
                     <Text variant="header-1" color="light-primary" className={css.Banner__title}>
-                        «Русский Сруб» - строительство срубов домов и бань
+                        «Волжский Дом» - строительство срубов домов и бань
                     </Text>
                 </div>
                 <div className={css.Banner__asideBlock}>
@@ -22,30 +23,38 @@ export const Banner: FC = () => {
                         До конца июля на все дома и бани скидки! Подробности по телефону.
                     </Text>
                     <div className={css.Banner__links}>
-                        <Text variant="header-1" color="link" className={css.Banner__link}>
-                            Заказать баню со скидкой
-                        </Text>
-                        <Text variant="header-1" color="link" className={css.Banner__link}>
-                            Заказать дом со скидкой
-                        </Text>
+                        <Link href="/bani-iz-sruba" className={css.Banner__link}>
+                            <Text variant="header-1" color="link" className={css.Banner__link}>
+                                Заказать баню со скидкой
+                            </Text>
+                        </Link>
+                        <Link href="/doma-iz-sruba" className={css.Banner__link}>
+                            <Text variant="header-1" color="link" className={css.Banner__link}>
+                                Заказать дом со скидкой
+                            </Text>
+                        </Link>
                     </div>
                 </div>
                 <div className={css.Banner__asideBlock}>
                     <div className={css.Banner__phones}>
-                        <Text
-                            variant="header-1"
-                            color="light-primary"
-                            className={css.Banner__phone}
-                        >
-                            +7 (495) 768-17-09
-                        </Text>
-                        <Text
-                            variant="header-1"
-                            color="light-primary"
-                            className={css.Banner__phone}
-                        >
-                            +7 (812) 920-32-45
-                        </Text>
+                        <a href="tel:+74957681709" className={css.Banner__phoneLink}>
+                            <Text
+                                variant="header-1"
+                                color="light-primary"
+                                className={css.Banner__phone}
+                            >
+                                +7 (495) 768-17-09
+                            </Text>
+                        </a>
+                        <a href="tel:+74957681709" className={css.Banner__phoneLink}>
+                            <Text
+                                variant="header-1"
+                                color="light-primary"
+                                className={css.Banner__phone}
+                            >
+                                +7 (812) 920-32-45
+                            </Text>
+                        </a>
                     </div>
                     <Text variant="header-1" color="light-primary" className={css.Banner__hint}>
                         ООО «СК-РусСтрой» ИНН 5027296210

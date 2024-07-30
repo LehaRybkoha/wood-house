@@ -1,4 +1,3 @@
-import {ImageSlider} from '@/components/ImageSlider/ImageSlider';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
@@ -13,7 +12,7 @@ export default function CutTypes() {
                                 Внутренняя и внешняя отделка сруба домов и бань
                             </Text>
                             <Text variant="body-3" color="dark-complementary" className="base-desc">
-                                Компания «Русский Сруб» рада предложить Вам высококачественную
+                                Компания «Волжский Дом» рада предложить Вам высококачественную
                                 внутреннюю отделку срубов бань и домов под ключ. Эта услуга включает
                                 абсолютно все работы по внутренней отделке. Сама отделка
                                 производится по материалам, которые предоставляет заказчик. А в

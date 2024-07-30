@@ -13,7 +13,7 @@ export type House = {
 };
 
 async function getData() {
-    const res = await fetch('http://localhost:8080/houses');
+    const res = await fetch('https://localhost:8080/houses');
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
 

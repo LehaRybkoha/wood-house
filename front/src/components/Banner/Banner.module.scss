@@ -52,6 +52,19 @@
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
     cursor: pointer;
     color: rgb(255, 190, 92) !important;
+    transition: 0.3s ease opacity;
+    text-decoration: none;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.Banner__phoneLink {
+    text-decoration: none;
+    transition: 0.3s ease opacity;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 .Banner__links {
