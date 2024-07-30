@@ -2,7 +2,7 @@
 
 import {FC} from 'react';
 
-import {closeModal, modalStore} from '@/store/modalStore';
+import {modalStore, toggleModal} from '@/store/modalStore';
 
 import css from './Modal.module.scss';
 
@@ -13,7 +13,10 @@ import {useStore} from '@tanstack/react-store';
 export const Modal: FC = () => {
     const {isOpen} = useStore(modalStore);
     return (
-        <ModalG open={isOpen} onClose={closeModal}>
+        <ModalG 
+            open={isOpen} 
+            onClose={() => toggleModal(false)}
+        >
             <div className={css.Modal__content}>
                 <Text variant="header-1" className={css.Modal__header}>
                     Заказaть проект
@@ -29,7 +32,10 @@ export const Modal: FC = () => {
                         <Button>Отправить</Button>
                     </div>
                 </form>
-                <Button className={css.Modal__closeButton} onClick={closeModal}>
+                <Button 
+                    className={css.Modal__closeButton} 
+                    onClick={() => toggleModal(false)}
+                >
                     <Icon data={Xmark} />
                 </Button>
             </div>
