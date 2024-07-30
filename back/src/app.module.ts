@@ -17,7 +17,6 @@ import { SubmitModule } from './submit/submit.module';
         limit: 10,
       },
     ]),
-    ,
     ConfigModule.forRoot(),
     BathsModule,
     HousesModule,
