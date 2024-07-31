@@ -6,7 +6,7 @@ module.exports = {
   deploy : {
     production : {
 	   // key: 'key.pem',
-      user : 'ubuntu',
+	    user : 'root',
       host : '194.58.126.86',
       ref  : 'origin/main',
       repo : 'git@github.com:LehaRybkoha/wood-house.git',
