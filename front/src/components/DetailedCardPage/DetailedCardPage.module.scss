@@ -1,3 +1,5 @@
+@import '../../styles/mixins';
+
 .DetailedCardPage {
     padding: 32px;
 }
@@ -24,10 +26,18 @@
     display: flex;
     gap: 32px;
     justify-content: space-between;
+
+    @include media(lg) {
+        flex-direction: column;
+    }
 }
 
 .DetailedCardPage__left {
     max-width: 50%;
+
+    @include media(lg) {
+        max-width: 100%;
+    }
 }
 
 .DetailedCardPage__sliderMainImageImg {
@@ -62,6 +72,10 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @include media(lg) {
+        margin-top: 0;
+    }
 }
 
 .DetailedCardPage__actionButton {
@@ -76,6 +90,10 @@
     margin-top: 32px;
     display: flex;
     gap: 64px;
+
+    @include media(lg) {
+        flex-direction: column;
+    }
 }
 
 .DetailedCardPage__additionalTitle {

@@ -245,7 +245,7 @@ export default async function Houses() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Цены на рубленные дома "в чашу" с "лунным пазом"
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32}}>
+                            <div className="scroll-x" style={{marginTop: 32, overflowX: "scroll", maxWidth: "100%"}}>
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
@@ -408,7 +408,7 @@ export default async function Houses() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Цены на рубленные дома "в чашу" с "лунным пазом"
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32}}>
+                            <div className="scroll-x" style={{marginTop: 32, overflow: "scroll", maxWidth: "100%"}}>
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
