@@ -8,7 +8,7 @@ type SubmitBody = {
   comment?: string;
 };
 
-@Controller('submit')
+@Controller('api/baths')
 export class SubmitController {
   constructor(
     private googleSheetConnectorService: GoogleSheetConnectorService,

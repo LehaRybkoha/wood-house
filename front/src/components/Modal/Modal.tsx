@@ -23,7 +23,7 @@ export const Modal: FC = () => {
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleSubmit = useCallback(async () => {
-        await fetch('https://localhost:8080/submit', {
+        await fetch('http://194.58.126.86/api/submit', {
             mode: 'no-cors',
             method: 'POST',
             headers: {

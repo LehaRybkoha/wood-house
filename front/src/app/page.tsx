@@ -9,8 +9,8 @@ import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
-    const resBath = await fetch('https://localhost:8080/baths');
-    const resHouse = await fetch('https://localhost:8080/houses');
+    const resBath = await fetch('http://194.58.126.86/api/baths');
+    const resHouse = await fetch('http://194.58.126.86/api/houses');
 
     if (!resBath.ok || !resHouse.ok) {
         // This will activate the closest `error.js` Error Boundary

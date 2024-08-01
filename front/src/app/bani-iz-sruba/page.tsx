@@ -23,7 +23,7 @@ export type Bath = {
 };
 
 async function getData() {
-    const res = await fetch('https://localhost:8080/baths');
+    const res = await fetch('http://194.58.126.86/api/baths');
 
     if (!res.ok) {
         throw new Error('Failed to fetch data');
@@ -254,7 +254,10 @@ export default async function Baths() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Бани "в лапу" без веранды
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32, overflowX: 'scroll', maxWidth: '100%'}}>
+                            <div
+                                className="scroll-x"
+                                style={{marginTop: 32, overflowX: 'scroll', maxWidth: '100%'}}
+                            >
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
@@ -363,7 +366,10 @@ export default async function Baths() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Бани "в чашу" с выносом под веранду - 2 метра
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32, overflowX: 'auto', maxWidth: '100%'}}>
+                            <div
+                                className="scroll-x"
+                                style={{marginTop: 32, overflowX: 'auto', maxWidth: '100%'}}
+                            >
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
