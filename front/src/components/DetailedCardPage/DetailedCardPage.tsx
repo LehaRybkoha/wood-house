@@ -75,7 +75,7 @@ export const DetailedCardPage: FC = () => {
                                 color="brand"
                                 className={css.DetailedCardPage__priceText}
                             >
-                                {bath.price}
+                                {bath.price} руб.
                             </Text>
                             <div>
                                 <ButtonClient
