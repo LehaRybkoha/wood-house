@@ -16,11 +16,19 @@ export const DetailedCardPage: FC = () => {
     const [bath, setBath] = useState<Bath | null>(null);
 
     useEffect(() => {
-        fetch('http://194.58.126.86/api/baths/' + params.slug, {
-            mode: 'no-cors',
-        })
-            .then((res) => res.json())
-            .then((data) => setBath(data));
+        if (window.location.pathname === 'doma-iz-sruba') {
+            fetch('http://194.58.126.86/api/houses/' + params.slug, {
+                mode: 'no-cors',
+            })
+                .then((res) => res.json())
+                .then((data) => setBath(data));
+        } else {
+            fetch('http://194.58.126.86/api/houses/' + params.slug, {
+                mode: 'no-cors',
+            })
+                .then((res) => res.json())
+                .then((data) => setBath(data));
+        }
     }, []);
 
     if (!bath) {
