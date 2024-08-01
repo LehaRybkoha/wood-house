@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import * as HOUSES from '../../assets/baths-mock.json';
+import * as HOUSES from '../../assets/houses-mock.json';
 
 type HouseInfoItem = {
   title: string;
