@@ -1,17 +1,23 @@
 [
   {
     "id": 1,
-    "name": "ИМЯ",
-    "area": 144,
-    "price": "1 678 000",
-    "log_size": "6x6",
-    "hallway": "2x6",
-    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-    "description": "Сруб бани 5х5м., рубленный в стиле 'дикой рубки'. \n В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "name": "Сруб бани�\"Йети\" | 5x5м",
+    "area": "35",
+    "price": "719 000",
+    "log_size": "5x5",
+    "hallway": "1,5х5",
+    "src": "https://moy-srub.ru//upload/iblock/83b/t0wklwve79bpkzee9q9xt5g4gq1uq60e.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
     "images": [
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+      "https://moy-srub.ru//upload/iblock/83b/t0wklwve79bpkzee9q9xt5g4gq1uq60e.webp",
+      "https://moy-srub.ru//upload/iblock/bc3/0kdblgtrxsmkl311y3fcgir393tetkz5.webp",
+      "https://moy-srub.ru//upload/iblock/b8e/u0xs4kbj0bd0u26hw14634nhmtsa5lq0.webp",
+      "https://moy-srub.ru//upload/iblock/875/2q8bvu2660kgqg12lzegxmen3guiqjva.webp",
+      "https://moy-srub.ru//upload/iblock/4af/twk9p37zg2fhldv02kssjgffh2pm61i4.webp",
+      "https://moy-srub.ru//upload/iblock/ea2/9rzf8jpy8ci6u6yp1mks2ax8ke6sm24m.webp",
+      "https://moy-srub.ru//upload/iblock/877/m91e6vtrvk9wkf36wjswwm7bj2k16e61.webp",
+      "https://moy-srub.ru//upload/iblock/dc9/o6l1hovx4uy5a4az9q3a8bk4ectb6qb6.webp",
+      "https://moy-srub.ru//upload/iblock/89c/70wp1ark45irllji53yehfbj9u5tx7rf.webp"
     ],
     "information": [
       {
@@ -23,19 +29,21 @@
         ]
       },
       {
-        "title": "Габариты",
+        "title": "Фундаменты",
         "values": [
           ["Свайный с обвязкой", "108 200 руб"],
-          ["Ленточный", "240 000 руб"]
+          ["Ленточный ", "240 000 руб"]
         ]
       },
       {
         "title": "Стоимость сруба*",
-        "values": [["*Включает только доставку и сборку без отделки!", ""]]
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "719 000 руб."]
+        ]
       }
     ],
     "characteristic": [
-      "рублен в стиле 'дикой рубки' в чашу;",
+      "рублен в стиле \"дикой рубки\" в чашу;",
       "высота сруба - 2,4-2,5 м; высота фронтонов 1,4-1,5 м;",
       "размеры сруба указаны по осям;",
       "диаметр бревна - 22-30 см(можно большего диаметра)."
@@ -43,6 +51,7 @@
     "complection": [
       "Сруб, рубка в чашу;",
       "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
       "Доска обрезная на обрешетку крыши - 25мм.;",
       "Фронтоны сруба рубленные;",
       "Рубероид (кровля крыши);",
@@ -51,48 +60,358 @@
   },
   {
     "id": 2,
-    "name": "ИМЯ",
-    "area": 144,
-    "price": "1 678 000",
-    "log_size": "6x6",
-    "hallway": "2x6",
-    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-    "description": "Сруб бани 5х5м., рубленный в стиле 'дикой рубки'. \n В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "name": "Сруб бани�\"Ерёма\" | 6x5м",
+    "area": "30",
+    "price": "349 000",
+    "log_size": "4x5",
+    "hallway": "2х5",
+    "src": "https://moy-srub.ru//upload/iblock/dbd/mmwjdynefei66z1f78hxtxnx7cre8m7d.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
     "images": [
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+      "https://moy-srub.ru//upload/iblock/dbd/mmwjdynefei66z1f78hxtxnx7cre8m7d.webp",
+      "https://moy-srub.ru//upload/iblock/290/5cmc7prcjnfnv9kjjgc79ny8ht22286d.webp",
+      "https://moy-srub.ru//upload/iblock/bf7/45828193dejy6423pdf9d7ok3dw2z9pl.webp",
+      "https://moy-srub.ru//upload/iblock/74a/3kioyeophjmuk0ug2tk2f2t4z9541q5e.webp",
+      "https://moy-srub.ru//upload/iblock/a85/wrubcugd35dsya9ppgl42ptykrawlbf0.webp",
+      "https://moy-srub.ru//upload/iblock/0e7/37u1v8x85o3pc1rh1725d40g4y91vz18.webp",
+      "https://moy-srub.ru//upload/iblock/8fe/nccr8huquwlj02epdj1cehcitxt51eqd.webp",
+      "https://moy-srub.ru//upload/iblock/1c0/onvorfwc4rznvbav9f8jcqdwn128seij.webp",
+      "https://moy-srub.ru//upload/iblock/7bc/d50qa4ce8bl0212bw3giy34u3231huqw.webp",
+      "https://moy-srub.ru//upload/iblock/1cf/kwjjp3te3r5p2cze3ws450qchgaxc2qk.webp",
+      "https://moy-srub.ru//upload/iblock/92f/iygfw1q6xhmje69zzj0wlxbocziaatbd.webp"
     ],
     "information": [
       {
         "title": "Габариты",
         "values": [
-          ["Площадь бани", "35 м2"],
-          ["Размер сруба", "5x5 м"],
-          ["Веранда", "1,5х5 м"]
+          ["Площадь бани", "30 м2"],
+          ["Размер сруба", "4x5 м"],
+          ["Веранда", "2х5 м"]
         ]
       },
       {
-        "title": "Габариты",
+        "title": "Фундаменты",
         "values": [
-          ["Свайный с обвязкой", "108 200 руб"],
-          ["Ленточный", "240 000 руб"]
+          ["Свайный с обвязкой", "108 000 руб"],
+          ["Ленточный ", "190000 руб"]
         ]
       },
       {
         "title": "Стоимость сруба*",
-        "values": [["*Включает только доставку и сборку без отделки!", ""]]
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "349 000 руб."]
+        ]
       }
     ],
     "characteristic": [
-      "рублен в стиле 'дикой рубки' в чашу;",
-      "высота сруба - 2,4-2,5 м; высота фронтонов 1,4-1,5 м;",
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,6 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Доска 25мм образная на зашив фронтонов снаружи;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Сруб бани�\"Ермак\" | 6x6м",
+    "area": "36",
+    "price": "404 000",
+    "log_size": "4x6",
+    "hallway": "2х6",
+    "src": "https://moy-srub.ru//upload/iblock/c3d/7xf14dynke8og3dg1kdff9cb1hzmbfzs.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/c3d/7xf14dynke8og3dg1kdff9cb1hzmbfzs.webp",
+      "https://moy-srub.ru//upload/iblock/df7/7h5h3oedgj7n154t1u8lbvi0gojpfno1.webp",
+      "https://moy-srub.ru//upload/iblock/88f/fu4j9t00ji5wt7gkwnfptyubbz87sy31.webp",
+      "https://moy-srub.ru//upload/iblock/b64/el2w0gibr29sjd3wuu0sl1tqkveqx4fh.webp",
+      "https://moy-srub.ru//upload/iblock/255/sw8y4g0p3vyt05xazpvv3ww3p3jaywgi.webp",
+      "https://moy-srub.ru//upload/iblock/555/j2tg98pfbifhe036isxiwyejy2aki7gt.webp",
+      "https://moy-srub.ru//upload/iblock/a6e/xbw3n35uwohqbpn3mxjuycrcgagq44og.webp",
+      "https://moy-srub.ru//upload/iblock/ee6/cf1cpfkaic74ubjogzd2jlodo20hgyax.webp",
+      "https://moy-srub.ru//upload/iblock/bbf/fvl3elwgiqnl6i5lg14cn0ixtn8btelk.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "36 м2"],
+          ["Размер сруба", "4x6 м"],
+          ["Веранда", "2х6 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "128 000 руб"],
+          ["Ленточный ", "285 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "404 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,6 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см."
+    ],
+    "complection": [
+      "Пятая стена 4м, рублена в лафет;",
+      "Доска образная на зашив фронтонов снаружи - 1сорт;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Сруб бани�\"Велиж\" | 5x4м",
+    "area": "20",
+    "price": "309 000",
+    "log_size": "5x4",
+    "hallway": "отсутствует",
+    "src": "https://moy-srub.ru//upload/iblock/edc/60cburbkmb1a6sdevgsg3k85gcf8rn1s.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/edc/60cburbkmb1a6sdevgsg3k85gcf8rn1s.webp",
+      "https://moy-srub.ru//upload/iblock/ac2/69mf4b45zgi3p8am246oig0j3hhhebfn.webp",
+      "https://moy-srub.ru//upload/iblock/441/gv80aga635xr605fmg2xywm68l6c3ub5.webp",
+      "https://moy-srub.ru//upload/iblock/731/hqs8s91xwxz3iglvx4fnezvelym3vzw0.webp",
+      "https://moy-srub.ru//upload/iblock/d7c/7t6ee3nog11vjwzwstiewxq2y2kft4xv.webp",
+      "https://moy-srub.ru//upload/iblock/cfe/10m2xaffyszmpvch2jrzugs0pc23m5ya.webp",
+      "https://moy-srub.ru//upload/iblock/f28/c3kt6n1r6vioynby1of5132kxsz2b24a.webp",
+      "https://moy-srub.ru//upload/iblock/c21/6q66u3rop304x0ijhymtjdfxlo88ycqm.webp",
+      "https://moy-srub.ru//upload/iblock/5ed/yaj5vs2u7i15112kziehpsxf98q6huma.webp",
+      "https://moy-srub.ru//upload/iblock/999/sd940i4bt1zb09lzfpk21wvt86slud6d.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "20 м2"],
+          ["Размер сруба", "5x4 м"],
+          ["Веранда", "отсутствует м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "78 800 руб"],
+          ["Ленточный ", "185 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "309 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,5 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-24 см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "доска образная на зашив фронтонов снаружи - 1сорт;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Сруб бани�\"Анна\" | 6x4м",
+    "area": "24",
+    "price": "359 000",
+    "log_size": "6x4",
+    "hallway": "отсутствует",
+    "src": "https://moy-srub.ru//upload/iblock/ae4/w78aavvywnfle6cai1u9xakp9ow5qofx.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/ae4/w78aavvywnfle6cai1u9xakp9ow5qofx.webp",
+      "https://moy-srub.ru//upload/iblock/bce/8q4551onyo8d4z4h5aprquwvr0ds1bm5.webp",
+      "https://moy-srub.ru//upload/iblock/f9b/rf0ahrotdo1qd0ikwforo5ekpgomox0r.webp",
+      "https://moy-srub.ru//upload/iblock/c18/9mzo7z6qkwtghp1h48aztm76h12x5k8h.webp",
+      "https://moy-srub.ru//upload/iblock/14a/qhd419ybylplwcqrchl6wbrdhs8z0sbr.webp",
+      "https://moy-srub.ru//upload/iblock/8bd/onwiqrau5dnvb4emlropapkf709rdjds.webp",
+      "https://moy-srub.ru//upload/iblock/285/g9a9z691gw6m56fmp73cmc4cf2qyagj2.webp",
+      "https://moy-srub.ru//upload/iblock/52e/x6tshbm14qjkb4qhi738t1f89o2fld8w.webp",
+      "https://moy-srub.ru//upload/iblock/ada/9v75ey9unczxo80dwx38ejx38mmvfjv2.webp",
+      "https://moy-srub.ru//upload/iblock/ea0/ihj7q1q7mkn7zo7lg8fikcmawjes6qq3.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "24 м2"],
+          ["Размер сруба", "6x4 м"],
+          ["Веранда", "отсутствует м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "95 800 руб"],
+          ["Ленточный ", "245 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "359 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,4-1,6 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Доска образная на зашив фронтонов снаружи - 1сорт;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Сруб бани�\"Идеал\" | 3x5м",
+    "area": "15",
+    "price": "249 000",
+    "log_size": "3x5",
+    "hallway": "отсутствует",
+    "src": "https://moy-srub.ru//upload/iblock/bca/nqfez9ei844je0j3nip40ear96pfyz4f.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/bca/nqfez9ei844je0j3nip40ear96pfyz4f.webp",
+      "https://moy-srub.ru//upload/iblock/543/k0pid1559ptkkpt2lm21qc2mk0f98gfn.webp",
+      "https://moy-srub.ru//upload/iblock/0d0/m3fvg01ks1e6u91rjvkf1vx34qsfsqwi.webp",
+      "https://moy-srub.ru//upload/iblock/1ad/1iwpvws6eiqxnj0m0umpn1zy681wbdsg.webp",
+      "https://moy-srub.ru//upload/iblock/c40/c920iwbyi3vas9g87606jxrmvydofl2j.webp",
+      "https://moy-srub.ru//upload/iblock/913/cmt5aigbdys5279vsq73m4k84rxlbxuj.webp",
+      "https://moy-srub.ru//upload/iblock/d18/8hig7qi697ipw5in3cgm6he2za072k7k.webp",
+      "https://moy-srub.ru//upload/iblock/adb/1tgiyw4kc4kj78y3msokalk14umkvzvq.webp",
+      "https://moy-srub.ru//upload/iblock/b53/5z145wzpq9tdvdydoqs3q02l5avkr1ti.webp",
+      "https://moy-srub.ru//upload/iblock/758/m07tajjxkelj6umrj6a1x6yy6h8q7iwu.webp",
+      "https://moy-srub.ru//upload/iblock/661/r5roipkx5cppwuyt29c3xd0lqgjimpba.webp",
+      "https://moy-srub.ru//upload/iblock/a57/nxbzjrnkgrjan430fv1wboie6obz6f5u.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "15 м2"],
+          ["Размер сруба", "3x5 м"],
+          ["Веранда", "отсутствует м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "65 000 руб"],
+          ["Ленточный ", "158 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "249 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 20-24см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Сруб бани�\"Малефисента\" | 8x5м",
+    "area": "40",
+    "price": "695 000",
+    "log_size": "4x5",
+    "hallway": "4х5",
+    "src": "https://moy-srub.ru//upload/iblock/de2/fsfkvuy40kf79t5gg1yltbsfa092otl4.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/de2/fsfkvuy40kf79t5gg1yltbsfa092otl4.webp",
+      "https://moy-srub.ru//upload/iblock/d0f/58lp3wvvthelqf7zrbtsxoj9as5u6ppa.webp",
+      "https://moy-srub.ru//upload/iblock/eb6/9ntj79wbxr0ykpakideeyfb06birvt8g.webp",
+      "https://moy-srub.ru//upload/iblock/92a/k61uzbvf5krvet5br0sv2web7way3zok.webp",
+      "https://moy-srub.ru//upload/iblock/c2f/w5oxmfbttszdd6uuk1ldckcu15153ski.webp",
+      "https://moy-srub.ru//upload/iblock/8ab/tx7kexuk4j7u0mtkt0mcv9edkkgn2q0d.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "40 м2"],
+          ["Размер сруба", "4x5 м"],
+          ["Веранда", "4х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "144400 руб"],
+          ["Ленточный ", "325000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "695 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен \"в чашу\"с лунным пазом;",
+      "пятая стена 4м., рублена в получашу;",
+      "высота потолка сруба в парной - 2,1-2,2 м; высота фронтонов 1,4-1,6 м;",
       "размеры сруба указаны по осям;",
-      "диаметр бревна - 22-30 см(можно большего диаметра)."
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
     ],
     "complection": [
       "Сруб, рубка в чашу;",
+      " ",
       "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
       "Доска обрезная на обрешетку крыши - 25мм.;",
       "Фронтоны сруба рубленные;",
       "Рубероид (кровля крыши);",
@@ -100,51 +419,1275 @@
     ]
   },
   {
-    "id": 3,
-    "name": "ИМЯ",
-    "area": 144,
-    "price": "1 678 000",
-    "log_size": "6x6",
-    "hallway": "2x6",
-    "src": "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-    "description": "Сруб бани 5х5м., рубленный в стиле 'дикой рубки'. \n В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "id": 8,
+    "name": "Сруб бани�\"Обь\" | 6x4м",
+    "area": "44",
+    "price": "349 000",
+    "log_size": "4x4",
+    "hallway": "2х4",
+    "src": "https://moy-srub.ru//upload/iblock/cdd/tp5m9begzh3tjnqaps1gl0o5tbqgm4vl.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
     "images": [
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp",
-      "https://brusina.ru/upload/adwex.minified/webp/3ed/90/3ed263fbfaf48ce27a34e029c3c4ba81.webp"
+      "https://moy-srub.ru//upload/iblock/cdd/tp5m9begzh3tjnqaps1gl0o5tbqgm4vl.webp",
+      "https://moy-srub.ru//upload/iblock/560/y5obb04mc3odciy1v319g4cv6udczvx1.webp",
+      "https://moy-srub.ru//upload/iblock/fca/evtfkv3xc8fy05o9p8u0wrufe5igwl6r.webp",
+      "https://moy-srub.ru//upload/iblock/c84/kgyfa28xgjp9mzayuoi6x9zt2vt58sgf.webp",
+      "https://moy-srub.ru//upload/iblock/78c/t1v8jnqbx0kavlfu0mddywiu677kbmqb.webp",
+      "https://moy-srub.ru//upload/iblock/894/7g4anyathb6nh7835njud38kdw2xyd1b.webp",
+      "https://moy-srub.ru//upload/iblock/f9f/k6vg0r32fgo5lusk6ca92k4yalx8huq0.webp",
+      "https://moy-srub.ru//upload/iblock/67d/gbe9m0h0bvm8lomfkk3w2zn3i8qbq2kq.webp",
+      "https://moy-srub.ru//upload/iblock/8af/33xz4x46nsqg36xcthj7tjdncmayg1kb.webp",
+      "https://moy-srub.ru//upload/iblock/344/tspniofog2o0ali4gt4ss1sk1s5mxj1j.webp",
+      "https://moy-srub.ru//upload/iblock/31b/js7x9gawymp8x10svgpkdo9z9cc6f6t3.webp",
+      "https://moy-srub.ru//upload/iblock/cf9/yknqoh3ttp8fgaf83rqqb4wee7qwe993.webp",
+      "https://moy-srub.ru//upload/iblock/6f2/v4nqd5zfn2kvj835n3xjcch6f01na0fw.webp"
     ],
     "information": [
       {
         "title": "Габариты",
         "values": [
-          ["Площадь бани", "35 м2"],
-          ["Размер сруба", "5x5 м"],
-          ["Веранда", "1,5х5 м"]
+          ["Площадь бани", "44 м2"],
+          ["Размер сруба", "4x4 м"],
+          ["Веранда", "2х4 м"]
         ]
       },
       {
-        "title": "Габариты",
+        "title": "Фундаменты",
         "values": [
-          ["Свайный с обвязкой", "108 200 руб"],
-          ["Ленточный", "240 000 руб"]
+          ["Свайный с обвязкой", "88000 руб"],
+          ["Ленточный ", "195000 руб"]
         ]
       },
       {
         "title": "Стоимость сруба*",
-        "values": [["*Включает только доставку и сборку без отделки!", ""]]
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "349 000 руб."]
+        ]
       }
     ],
     "characteristic": [
-      "рублен в стиле 'дикой рубки' в чашу;",
-      "высота сруба - 2,4-2,5 м; высота фронтонов 1,4-1,5 м;",
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота мансарды 2,2-2,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 4м., рубка в лафет;",
+      "Доска образная на зашив фронтонов снаружи;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Сруб бани�\"Пионер\" | 5x5м",
+    "area": "25",
+    "price": "289 000",
+    "log_size": "3x5",
+    "hallway": "2х5",
+    "src": "https://moy-srub.ru//upload/iblock/d4d/a12shavryvf9qo3wkmpcn00t6ok0loqo.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/d4d/a12shavryvf9qo3wkmpcn00t6ok0loqo.webp",
+      "https://moy-srub.ru//upload/iblock/b17/ft0qvw6bds172nl7l619ghqsineu0l0c.webp",
+      "https://moy-srub.ru//upload/iblock/b24/u0r1mxszc6bsuvsksifx0n601tkniqp2.webp",
+      "https://moy-srub.ru//upload/iblock/cc5/91h466uq4fr87nvurz8lbifca0tpft4f.webp",
+      "https://moy-srub.ru//upload/iblock/c68/n5ellch4ns4f027t5wddqfqazjk16x1p.webp",
+      "https://moy-srub.ru//upload/iblock/0b2/u4lc5ho4wd1rwn1137ebf3uritz6l55p.webp",
+      "https://moy-srub.ru//upload/iblock/f2c/lalaim6jiq3zwdukp2z2lacjxcor9ldj.webp",
+      "https://moy-srub.ru//upload/iblock/7fc/qpnu9v7w2g0k5wwx0twgvhmx0xeihs0q.webp",
+      "https://moy-srub.ru//upload/iblock/94f/kwqvxtxtetjpueuksojo63iugnxp13dz.webp",
+      "https://moy-srub.ru//upload/iblock/43a/v2fvpz04pmttiz5dok99lspbut0xwib0.webp",
+      "https://moy-srub.ru//upload/iblock/ede/oso75k7ddesyaco2g0ozxpbnt8vuo5hb.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "25 м2"],
+          ["Размер сруба", "3x5 м"],
+          ["Веранда", "2х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Столбчатый", "Бесплатно"],
+          ["Свайный с обвязкой", "88 000 руб"],
+          ["Ленточный", "200 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "289 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,5 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-24 см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Сруб бани�\"Волга\" | 5x6м",
+    "area": "55",
+    "price": "439 000",
+    "log_size": "4x5",
+    "hallway": "2х5",
+    "src": "https://moy-srub.ru//upload/iblock/6a1/4plepgjfh5zhzpmjhynvaoynshuxc2z2.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/6a1/4plepgjfh5zhzpmjhynvaoynshuxc2z2.webp",
+      "https://moy-srub.ru//upload/iblock/22d/6rknbc6da8vtvpa3z2ofrxtcmkl4w3pc.webp",
+      "https://moy-srub.ru//upload/iblock/0b6/7u7vbftre10uzmv2p7i8k9lnwim7kxwr.webp",
+      "https://moy-srub.ru//upload/iblock/ece/b38x6q5tajtht2ff9ncp0qwtm6b39xan.webp",
+      "https://moy-srub.ru//upload/iblock/4ef/63znx398malk5thevhyp69j1dha024du.webp",
+      "https://moy-srub.ru//upload/iblock/e7c/t2otuhm6n529iat8r902c4cpeclqsv13.webp",
+      "https://moy-srub.ru//upload/iblock/714/p8avbj79t2xig08ilqefn6fb3gxi2prp.webp",
+      "https://moy-srub.ru//upload/iblock/ac6/w7cg35e81offb8fv2iqj9tbb528656mt.webp",
+      "https://moy-srub.ru//upload/iblock/c1a/4xaikh46x84lec6vvyz5q73e1000eddd.webp",
+      "https://moy-srub.ru//upload/iblock/a74/v32nkdg8f7bn90pjq30hpv3v0nvadj6v.webp",
+      "https://moy-srub.ru//upload/iblock/1c7/6yz142zzealy3th7f6qn2oespapv0i8u.webp",
+      "https://moy-srub.ru//upload/iblock/31c/am3vivqcpwa0qrg0wsdjrhmjj7b1bikj.webp",
+      "https://moy-srub.ru//upload/iblock/539/izybnhmxj3sx11w94dpdbwmthv7c1ytw.webp",
+      "https://moy-srub.ru//upload/iblock/318/fxl6jihqo2tf6o7vl0pmwkhtcghgjlo7.webp",
+      "https://moy-srub.ru//upload/iblock/668/51pw8jwxgwqk4uv1zyp0wwjzda1t8lsp.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "55 м2"],
+          ["Размер сруба", "4x5 м"],
+          ["Веранда", "2х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "98 000 руб"],
+          ["Ленточный ", "230 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "439 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м;  высота мансарды 2,2-2,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 4м. (возможна замена на 5м. с доплатой), рубка в лафет;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской - 1 сорт;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Сруб бани�\"Полина\" | 6x5м",
+    "area": "50",
+    "price": "425 000",
+    "log_size": "4x5",
+    "hallway": "2х5",
+    "src": "https://moy-srub.ru//upload/iblock/aee/4i6hio0qiy4qsz4ggmkfz1l7l63em6gi.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/aee/4i6hio0qiy4qsz4ggmkfz1l7l63em6gi.webp",
+      "https://moy-srub.ru//upload/iblock/fec/9qkbj6rtzuhpqtwkibmgbhqsla55cuqw.webp",
+      "https://moy-srub.ru//upload/iblock/b49/8u38qkafzkx60el4wk0lx46mjzmbjnno.webp",
+      "https://moy-srub.ru//upload/iblock/0c8/93qb1cl8ibao2linpvahyykk0lqs72tq.webp",
+      "https://moy-srub.ru//upload/iblock/15b/dfi5kl6t22733vbyghws2md8sq7pgezp.webp",
+      "https://moy-srub.ru//upload/iblock/b56/uqaky3422wyj0atpvnolp29f8rue3imm.webp",
+      "https://moy-srub.ru//upload/iblock/28e/lpipab1zbx270maan834uds2083n1j8j.webp",
+      "https://moy-srub.ru//upload/iblock/6d2/9xd9rxr2lkzppp45qmx27sc2v28i0qsa.webp",
+      "https://moy-srub.ru//upload/iblock/9ed/lejv84reku2opjp119yrw5znkpvx1huc.webp",
+      "https://moy-srub.ru//upload/iblock/fb7/wp4rp20bg1b68mzdvapmpvke86yay9w2.webp",
+      "https://moy-srub.ru//upload/iblock/ed7/gdiy46xi5nxegc32qc8j0yhqobjnvpvf.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "50 м2"],
+          ["Размер сруба", "4x5 м"],
+          ["Веранда", "2х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "98 000 руб"],
+          ["Ленточный ", "220 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "425 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,15 м; высота крыши 3,5 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 4м., рублена в лафет;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской 22м.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Сруб дома�\"Павел\" | 6x6м",
+    "area": "65",
+    "price": "499 000",
+    "log_size": "4x6",
+    "hallway": "2х6",
+    "src": "https://moy-srub.ru//upload/iblock/4dc/m9xvsrnfq2f82zmzfn3pwt3fliv46s70.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/4dc/m9xvsrnfq2f82zmzfn3pwt3fliv46s70.webp",
+      "https://moy-srub.ru//upload/iblock/5e7/nid4icbyfd65a4pxf2v8nwdxah96xky2.webp",
+      "https://moy-srub.ru//upload/iblock/843/kvniw4y8882q9ac1j7b1zzdjn7l0c3ju.webp",
+      "https://moy-srub.ru//upload/iblock/91e/0n4iqum94ksgzvlmyobnkqretos507s6.webp",
+      "https://moy-srub.ru//upload/iblock/67e/2lhbkucc6pv5sehab2l68f79c7id9w40.webp",
+      "https://moy-srub.ru//upload/iblock/df3/v8rl0uwq0c9voxuobuky4o2z4rrruouk.webp",
+      "https://moy-srub.ru//upload/iblock/eea/yxwoytmkmdpukjqntf5oad29z41ah5rl.webp",
+      "https://moy-srub.ru//upload/iblock/e18/mvdralbvuxj7mewfuxdm5xl4l6m4frcx.webp",
+      "https://moy-srub.ru//upload/iblock/b14/mb4xkvmoa3xjwqlqd3pqszs71zenj0yt.webp",
+      "https://moy-srub.ru//upload/iblock/4ed/kl4bmqsq7tlop9ohyj9v8j7bp88h2rhh.webp",
+      "https://moy-srub.ru//upload/iblock/c0e/bjzxvulhlyhbyct24adg28h3abeb48di.webp",
+      "https://moy-srub.ru//upload/iblock/a7e/ieg61n9o23ipkr4s292w1hv3q873nnj9.webp",
+      "https://moy-srub.ru//upload/iblock/329/a08zcc8ifv8z85b36zt97lvxhuuh0pfh.webp",
+      "https://moy-srub.ru//upload/iblock/c69/7lcoi2o8nb5hvrpai458eg3ob63ji6z0.webp",
+      "https://moy-srub.ru//upload/iblock/1db/ef7fizbcmidi7cx0xqjsioou0vz50fnl.webp",
+      "https://moy-srub.ru//upload/iblock/0a4/eqn38qvop7pkfo3g5ex6ewcabfo62c46.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь дома", "65 м2"],
+          ["Размер сруба", "4x6 м"],
+          ["Веранда", "2х6 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "128 000 руб"],
+          ["Ленточный ", "285 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "499 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные;",
+      "высота потолка - 2,15 м; высота мансарды 2,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна в среднем - 24-26 см."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 4м., рублена в лафет;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты обрезной доской - 1сорт.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Сруб бани�\"Варяг\" | 6x3м",
+    "area": "18",
+    "price": "299 000",
+    "log_size": "6x3",
+    "hallway": "отсутствует",
+    "src": "https://moy-srub.ru//upload/iblock/b59/6vi9z023d1yndwge976ik2gz402n1w7m.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/b59/6vi9z023d1yndwge976ik2gz402n1w7m.webp",
+      "https://moy-srub.ru//upload/iblock/8f0/3gcghdtkbzd2kijfjpzmp3nhcwxedviz.webp",
+      "https://moy-srub.ru//upload/iblock/1c3/ra25nq11la0ml3tpnswvshkrtp7cthjy.webp",
+      "https://moy-srub.ru//upload/iblock/c30/i6907t7uf0ifyrk0c022fxh0exexpfb8.webp",
+      "https://moy-srub.ru//upload/iblock/2a0/54qmm5cgcnux2dhazsdlst34dyvni6u7.webp",
+      "https://moy-srub.ru//upload/iblock/279/3w2dept1splzd8thbfnjew2pq2ok7fu5.webp",
+      "https://moy-srub.ru//upload/iblock/6bb/2nqjpqlqviho4hv2o1kp7vdf0pfk3u33.webp",
+      "https://moy-srub.ru//upload/iblock/83b/q9c7xymns8307hsfg89gtqsnxctozxzn.webp",
+      "https://moy-srub.ru//upload/iblock/605/aitugvqu1pzqi6is8asz49nxr6l2gwqx.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "18 м2"],
+          ["Размер сруба", "6x3 м"],
+          ["Веранда", "отсутствует м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Столбчатый", "Бесплатно"],
+          ["Свайный с обвязкой", "92 500 с обвязкой руб"],
+          ["Ленточный ", "190 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "299 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,5 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-24 см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Сруб бани�\"Иволга\" | 4x(6+2,5)м",
+    "area": "34",
+    "price": "620 000",
+    "log_size": "4х6",
+    "hallway": "4х2,5",
+    "src": "https://moy-srub.ru//upload/iblock/4dc/wm0qyg84xgan92ushra2a4u69l2xibf2.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/4dc/wm0qyg84xgan92ushra2a4u69l2xibf2.webp",
+      "https://moy-srub.ru//upload/iblock/eb3/3tbwxy6xt3ntabd7faq4tw99zzazgzdm.webp",
+      "https://moy-srub.ru//upload/iblock/8c7/8bplxdiqhybhjw2ik66pukbs4lez7l3y.webp",
+      "https://moy-srub.ru//upload/iblock/f18/dx0d9ssnmpbrl6gi11i387cfbtwgettj.webp",
+      "https://moy-srub.ru//upload/iblock/8a3/5g381af33x470hb5l3pps6xn7l6zea0a.webp",
+      "https://moy-srub.ru//upload/iblock/3ed/u9u82h68dgb45w1tk7pogfswhy8dut0j.webp",
+      "https://moy-srub.ru//upload/iblock/4ce/37o1cm7xvbwmpb4506cqn7p8i52tfgfp.webp",
+      "https://moy-srub.ru//upload/iblock/c2c/z6wg7s563k87jkk68vnp67zam455a8go.webp",
+      "https://moy-srub.ru//upload/iblock/691/wi9rbirzbwxrla9w5b9q3qfcaz2wlyzf.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "34 м2"],
+          ["Размер сруба", "4х6 м"],
+          ["Веранда", "4х2,5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "126000 руб"],
+          ["Ленточный ", "320000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "620 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Сруб дома�\"Эксклюзив\" | 6x6м",
+    "area": "70",
+    "price": "619 000",
+    "log_size": "6x4",
+    "hallway": "6x2",
+    "src": "https://moy-srub.ru//upload/iblock/387/qlf8901yh80lghl0ioithvicnlakwf6s.webp",
+    "description": "650 000 руб.\n619 000 руб.",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/387/qlf8901yh80lghl0ioithvicnlakwf6s.webp",
+      "https://moy-srub.ru//upload/iblock/6db/jq07msrnr022ub29zhs7d2cwynepim98.webp",
+      "https://moy-srub.ru//upload/iblock/db8/16lptl6s6e3v16b8x6s7u80ftn6gqwfq.webp",
+      "https://moy-srub.ru//upload/iblock/d38/if6y0p52tgyei18a2tc9rb7w6t5pvh09.webp",
+      "https://moy-srub.ru//upload/iblock/917/go242iuo5du9p29510xcv966kxe3tchm.webp",
+      "https://moy-srub.ru//upload/iblock/ebb/347llsvdvdlm6sxu1b1qwa95oqq53hdl.webp",
+      "https://moy-srub.ru//upload/iblock/481/tzxudzy8k13lc1yrc68qhjtgxucknfdf.webp",
+      "https://moy-srub.ru//upload/iblock/1bd/09l3152pq3jdlhwopnl84ntro443vp37.webp",
+      "https://moy-srub.ru//upload/iblock/afa/bo8ml8yu23n3cm13srcxdu055i8wvi44.webp",
+      "https://moy-srub.ru//upload/iblock/2b4/32gqv719jtf18y1gicz6euv6f1lr70eb.webp",
+      "https://moy-srub.ru//upload/iblock/f5b/syjic90rwv6o06cot0e7k5zdpoz0mm4y.webp",
+      "https://moy-srub.ru//upload/iblock/ca2/jvsvcuod2h0i6amuqxi2ugtwae26kk3v.webp",
+      "https://moy-srub.ru//upload/iblock/532/2koz5ljp85962zgh2rxomj0w2b38owi7.webp",
+      "https://moy-srub.ru//upload/iblock/c02/k0ophtnkro7oil2k6i6ateut7n4ocaml.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь дома", "70 м2"],
+          ["Размер сруба", "6x4 м"],
+          ["Веранда", "6x2 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "129 000 руб"],
+          ["Ленточный ", "345 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "619 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены.;",
+      "",
+      "веранда рубится в чашу, на 90-110см в высоту (вход можно смещать).;",
+      "размеры сруба указаны по внутренней;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 4м., рубка в лафет;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150х50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Сруб бани�\"Джокер\" | 4x8м",
+    "area": "32",
+    "price": "492 000",
+    "log_size": "4х5",
+    "hallway": "3х4",
+    "src": "https://moy-srub.ru//upload/iblock/83a/scg28mhbejuf6h29dfdlr930qj2d9qyv.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/83a/scg28mhbejuf6h29dfdlr930qj2d9qyv.webp",
+      "https://moy-srub.ru//upload/iblock/60a/eaoevn2l46b1vdbcy7s7z3kro0fhmpce.webp",
+      "https://moy-srub.ru//upload/iblock/49e/r99k7fdeb5kcw0pkdx719mlutzpfd2sr.webp",
+      "https://moy-srub.ru//upload/iblock/977/5pig2wbh5uhotxzqvtz2q4v8m3oa0yh2.webp",
+      "https://moy-srub.ru//upload/iblock/1e6/lr68y8w1tqhnfagih3wub1h0hou4dfr0.webp",
+      "https://moy-srub.ru//upload/iblock/aba/be478pl7pihwi23a0t4ehscb92dbhpga.webp",
+      "https://moy-srub.ru//upload/iblock/235/xa1onpznfux77dicc5i7jai038ow2jr3.webp",
+      "https://moy-srub.ru//upload/iblock/868/3gec1ax3at9rs56ituqx8p0zij34d74p.webp",
+      "https://moy-srub.ru//upload/iblock/b4f/6uwqngeyhlwly9d5oarmg1yx37frnw2b.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "32 м2"],
+          ["Размер сруба", "4х5 м"],
+          ["Веранда", "3х4 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "118200 руб"],
+          ["Ленточный ", "260000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "492 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота крыши 1,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Сруб бани�\"Осень\" | 6x7м",
+    "area": "28",
+    "price": "570 000",
+    "log_size": "4x7",
+    "hallway": "2х7",
+    "src": "https://moy-srub.ru//upload/iblock/6f7/fuzbf0ufywf21pumx2rg2xqv90w9zgxa.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/6f7/fuzbf0ufywf21pumx2rg2xqv90w9zgxa.webp",
+      "https://moy-srub.ru//upload/iblock/82a/dmztmbmn0vuq27rcaulg6dyu9w6ik2mp.webp",
+      "https://moy-srub.ru//upload/iblock/b26/021jd63137w2l61zbyvmx5fpjpy8yxe7.webp",
+      "https://moy-srub.ru//upload/iblock/cdb/pb20ljm7zotu6ivhbpw37et5rbuf4wz3.webp",
+      "https://moy-srub.ru//upload/iblock/8f0/uw2ci8m8y2f2dbb666nbn5xm3lqh60kj.webp",
+      "https://moy-srub.ru//upload/iblock/d26/a67u95805chgg19zfg792ij293gbdrp3.webp",
+      "https://moy-srub.ru//upload/iblock/e33/ou9yrbdhgojv7uljkbxodbmwq8vas56n.webp",
+      "https://moy-srub.ru//upload/iblock/bca/erccez1um73d3cg2huky54r9lts5rze8.webp",
+      "https://moy-srub.ru//upload/iblock/9e6/6e07nj0t1v8hm3vlggenpvv4w2jkmdih.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "28 м2"],
+          ["Размер сруба", "4x7 м"],
+          ["Веранда", "2х7 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "128400 руб"],
+          ["Ленточный ", "270000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "570 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,4-2,5 м; высота манарды 2,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в лапу;",
+      "Лаги пола из бревна;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Сруб бани�\"Анастасия\" | 5,5x5м",
+    "area": "25,5",
+    "price": "545 000",
+    "log_size": "4x5",
+    "hallway": "1,5х5",
+    "src": "https://moy-srub.ru//upload/iblock/453/kkrdu5mavove4tmq770z728vxv6471fl.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/453/kkrdu5mavove4tmq770z728vxv6471fl.webp",
+      "https://moy-srub.ru//upload/iblock/2cb/5lgx6je2skr9zy8dwauw830mbz606gxn.webp",
+      "https://moy-srub.ru//upload/iblock/111/mj0pm1d5z0ybklqjkbrv12eytf5ksm4u.webp",
+      "https://moy-srub.ru//upload/iblock/94b/t31dyjxeit1dwm4m11ys0zfkymqfqu5a.webp",
+      "https://moy-srub.ru//upload/iblock/5d1/wj4q9a1jrg6s08qzf42ciws11g2v06y2.webp",
+      "https://moy-srub.ru//upload/iblock/c01/v28h4pqmw86mlz6s2dl3wc3v12a0udwg.webp",
+      "https://moy-srub.ru//upload/iblock/f3e/bxdnf2h92zwe4mdawazi9gu4jh0bjsxk.webp",
+      "https://moy-srub.ru//upload/iblock/c4c/vsenj8hzmyoib3uhcl5i9i4z7hmkwn4o.webp",
+      "https://moy-srub.ru//upload/iblock/74f/kcspltw2xpz6b5a2vh6mza9gaeggx99y.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "25,5 м2"],
+          ["Размер сруба", "4x5 м"],
+          ["Веранда", "1,5х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Столбчатый", "Бесплатно"],
+          ["Свайный с обвязкой", "108000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "545 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен \"в чашу\"с лунным пазом;",
+      "пятая стена 4м,к;",
+      "высота потолка сруба - 2,1-2,2 м; высота фронтонов 1,5-,1,6 м;",
       "размеры сруба указаны по осям;",
-      "диаметр бревна - 22-30 см(можно большего диаметра)."
+      "диаметр бревна - 20-22 см(можно большего диаметра)."
     ],
     "complection": [
       "Сруб, рубка в чашу;",
       "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
       "Доска обрезная на обрешетку крыши - 25мм.;",
       "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Сруб бани�\"Сирень\" | 6x4м",
+    "area": "24",
+    "price": "595 000",
+    "log_size": "6x4",
+    "hallway": "92 000 р�",
+    "src": "https://moy-srub.ru//upload/iblock/173/vv14cz23ecng2eud09317zhktgwdp695.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/173/vv14cz23ecng2eud09317zhktgwdp695.webp",
+      "https://moy-srub.ru//upload/iblock/7a0/oemi5m9r0hi6t8skxy76zs08dgznl1ol.webp",
+      "https://moy-srub.ru//upload/iblock/bf9/41x18s9sp9z7vw379x0pvwic9jy6icmn.webp",
+      "https://moy-srub.ru//upload/iblock/0b8/ymshn4kgodj0iwl93wj9yxs3nqia1aub.webp",
+      "https://moy-srub.ru//upload/iblock/1f5/fxhq9gwoxeifqzzu4s7fmnw4jmw447dz.webp",
+      "https://moy-srub.ru//upload/iblock/3e4/ey3mf295suknxwjh6mzqewzpb6sr3fes.webp",
+      "https://moy-srub.ru//upload/iblock/06d/yqw04q5xnrbsn4999q650066yiwf33oi.webp",
+      "https://moy-srub.ru//upload/iblock/a04/h0jx3z9upehli7ie6i9uvx4ortzfpwhx.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "24 м2"],
+          ["Размер сруба", "6x4 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "92 000 руб"],
+          ["Ленточный ", "190 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "595 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен \"в чашу\"с лунным пазом;",
+      "пятая стена 4м, рублена в чашу под конек;",
+      "высота потолка сруба - 2,1-2,2 м; высота фронтонов 1,4-,1,5 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна - 22-24 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Сруб бани�\"Коляда\" | 6,5x4м",
+    "area": "24",
+    "price": "679 000",
+    "log_size": "6,5x4",
+    "hallway": "128 000 р�",
+    "src": "https://moy-srub.ru//upload/iblock/805/0u0ee86ib0hiady1l0wxs7ns5h30fb0q.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/805/0u0ee86ib0hiady1l0wxs7ns5h30fb0q.webp",
+      "https://moy-srub.ru//upload/iblock/2db/9sp6fhm5ll3wx3yuvkolff96ipiagmgt.webp",
+      "https://moy-srub.ru//upload/iblock/c42/7p9maco2v2q3g7rhsamz9omxmsvjxd69.webp",
+      "https://moy-srub.ru//upload/iblock/8ac/aygq8g5dtip92yy7ws4d4d7mhqbut4na.webp",
+      "https://moy-srub.ru//upload/iblock/274/l4k9ai30tmr2lwmdpf463t79uultj76g.webp",
+      "https://moy-srub.ru//upload/iblock/ccb/ozlc09f1bbq80sgkwr3iblfjuuno316x.webp",
+      "https://moy-srub.ru//upload/iblock/527/xe1y6cciinrk0r8fqycda4habagabgdn.webp",
+      "https://moy-srub.ru//upload/iblock/ca7/c4m7de9pr4gb4393o3a6gf0g0i21a73d.webp",
+      "https://moy-srub.ru//upload/iblock/8ad/1ic9d4mfd8xm8qtfm8zdgy3l0hu1ma3h.webp",
+      "https://moy-srub.ru//upload/iblock/a49/w1gkdf0l44v66zi8u03jl1uga9zyy10c.webp",
+      "https://moy-srub.ru//upload/iblock/66f/p0d403c03yfof7q6bxcc3f165eiypauk.webp",
+      "https://moy-srub.ru//upload/iblock/849/f2dzrr8xu07nii7w9l363ayeq3iotat6.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "24 м2"],
+          ["Размер сруба", "6,5x4 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "128 000 руб"],
+          ["Ленточный ", "345 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "679 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен \"в чашу\"с лунным пазом;",
+      "пятая стена 4м., рублена в получашу ;",
+      "высота потолка сруба - 2,1-2,2 м; высота фронтонов 1,4-1,5 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна в среднем - 22-24 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Сруб бани�\"Константин\" | 6x(5+2)м",
+    "area": "55",
+    "price": "695 000",
+    "log_size": "6x5",
+    "hallway": "3,5х2",
+    "src": "https://moy-srub.ru//upload/iblock/866/ryql65da9m5pllein5tztxyoxla08u0m.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/866/ryql65da9m5pllein5tztxyoxla08u0m.webp",
+      "https://moy-srub.ru//upload/iblock/7f3/8582mq3i1amjytg1r4336oe76kip57te.webp",
+      "https://moy-srub.ru//upload/iblock/451/mti9s8670eth4pnja51ptij4qmv15jbv.webp",
+      "https://moy-srub.ru//upload/iblock/b2c/tun3z2yu7pjoty82v9u759676g8oz2vh.webp",
+      "https://moy-srub.ru//upload/iblock/eb3/2wu55j0w5ba4kf8fc32bqesycr4eohst.webp",
+      "https://moy-srub.ru//upload/iblock/f91/8nu7x7ku93fg8tcs81fabr1mrnj4zeol.webp",
+      "https://moy-srub.ru//upload/iblock/28c/iy10ihezxdk1uejguyzpykc13j3szmw4.webp",
+      "https://moy-srub.ru//upload/iblock/04e/jcn0speelf6lo0srij1pck58a6kbyh06.webp",
+      "https://moy-srub.ru//upload/iblock/964/h3x7g90knoi7po5bbe4iv18i9lbpt23v.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "55 м2"],
+          ["Размер сруба", "6x5 м"],
+          ["Веранда", "3,5х2 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "118200 руб"],
+          ["Ленточный ", "220000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "695 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"чашу\", внутри тесанные стены;",
+      "высота потолка - 2,4-2,5 м;  высота мансарды 3,5-3,7 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 24-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 5м., рубка в лафет;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Сруб дома�\"Всеволод\" | 6x(5+2)м",
+    "area": "55",
+    "price": "930 000",
+    "log_size": "6x5",
+    "hallway": "3,5х2",
+    "src": "https://moy-srub.ru//upload/iblock/c07/xegtb0zjusmj421k36ozno625ggizyyf.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Планировка сруба свободная. Перегородка ставится по месту на участке, проемы под окна и двери так же вырезаются по месту. \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/c07/xegtb0zjusmj421k36ozno625ggizyyf.webp",
+      "https://moy-srub.ru//upload/iblock/0d9/hx451m0cw38aisrpznm5sbr63msk7jf6.webp",
+      "https://moy-srub.ru//upload/iblock/a14/4dcorobmiv2yd14iljep8fav2m7gxd1o.webp",
+      "https://moy-srub.ru//upload/iblock/70d/ps2k5h19qeruy9c2bjxrm6g80xrvc394.webp",
+      "https://moy-srub.ru//upload/iblock/753/144g5ktx7tuvs7zjy90ibyzf3uikgl4s.webp",
+      "https://moy-srub.ru//upload/iblock/c54/g3c4du3infwyi9ruz6fj93vw5xr2qyjq.webp",
+      "https://moy-srub.ru//upload/iblock/f9c/tce65d5n5ix08q874zrwvyc5c2tg0599.webp",
+      "https://moy-srub.ru//upload/iblock/5e4/tyvqzjgp25dwqd63tu014njgx9r907ts.webp",
+      "https://moy-srub.ru//upload/iblock/3d5/9997wpuz5m0flc8jsftqpx033b7tt730.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь дома", "55 м2"],
+          ["Размер сруба", "6x5 м"],
+          ["Веранда", "3,5х2 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "128200 руб"],
+          ["Ленточный ", "320000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "930 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в \"чашу\", внутри круглые стены;",
+      "высота потолка - 2,1-2,2 м;  высота мансарды 3,4-3,5 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна - 24-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 5м., рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм.;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской - 25мм.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Сруб бани�\"Ока\" | 5x5м",
+    "area": "45",
+    "price": "339 000",
+    "log_size": "3x5",
+    "hallway": "2х5",
+    "src": "https://moy-srub.ru//upload/iblock/f34/gc2gi5kwkc9yywz3ygvoit7fhkuomjii.webp",
+    "description": "Ленточный \n\n190000 руб\n\n*Включает только доставку и сборку без отделки!\n339 000 руб.",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/f34/gc2gi5kwkc9yywz3ygvoit7fhkuomjii.webp",
+      "https://moy-srub.ru//upload/iblock/0f7/9lp8e66d963jbj7dvtfqrpu1o25gvahr.webp",
+      "https://moy-srub.ru//upload/iblock/706/heph56w4twjpg35xhofhwo64xidndine.webp",
+      "https://moy-srub.ru//upload/iblock/047/uepykdx9g6f1ol86tfq62domhifebm0w.webp",
+      "https://moy-srub.ru//upload/iblock/836/7lf16t7hs13ueab56g5suzchx4t7lasv.webp",
+      "https://moy-srub.ru//upload/iblock/7ad/26nhtwzgwwh23kezt2un0xafdlipkc1f.webp",
+      "https://moy-srub.ru//upload/iblock/a5d/mh6fjlidm8xurgybqw6jxx3rwxvf8nvp.webp",
+      "https://moy-srub.ru//upload/iblock/23a/rnhdp5gbnp9cjb7t4qm3208eeuzl2wq2.webp",
+      "https://moy-srub.ru//upload/iblock/976/bb8p7gaeazt3drh944af51esd39eired.webp",
+      "https://moy-srub.ru//upload/iblock/419/n3fs4ylcav70i15x1twn229sl4sw10p8.webp",
+      "https://moy-srub.ru//upload/iblock/2e2/w1noh4dflkmwu1d4k0wd7e53nqsgpfk0.webp",
+      "https://moy-srub.ru//upload/iblock/22a/eeclbuo0u05q92fk225xlqd5ukkg791k.webp",
+      "https://moy-srub.ru//upload/iblock/11b/wjb3wuk13jspm5duwp71opumgb5s5rkp.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "45 м2"],
+          ["Размер сруба", "3x5 м"],
+          ["Веранда", "2х5 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "88 000 руб"],
+          ["Ленточный ", "190000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "339 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      " Характеристика сруба: ",
+      "рублен в \"лапу\", внутри тесанные стены;",
+      "высота потолка - 2,1-2,2 м; высота мансарды 2,2-2,4 м;",
+      "размеры сруба указаны по внутренней стороне;",
+      "диаметр бревна - 22-24 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб-пятистенок, пятая стена 3м., рубка в лафет;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба зашиты доской - 1 сорт.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Сруб бани�\"Валерия\" | 8x6м",
+    "area": "44",
+    "price": "989 000",
+    "log_size": "6x6",
+    "hallway": "2х6",
+    "src": "https://moy-srub.ru//upload/iblock/e42/6l2g5k3673as8w087z06xibsupqjxexo.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/e42/6l2g5k3673as8w087z06xibsupqjxexo.webp",
+      "https://moy-srub.ru//upload/iblock/b14/fe7pjmadmb38k5o8tjcjgxl8u25b9h0f.webp",
+      "https://moy-srub.ru//upload/iblock/f03/31o5k1ad8d6s0vewid6v01psqnw0h146.webp",
+      "https://moy-srub.ru//upload/iblock/bd1/2pdmfsbxf3tw5pd67d0r3zsxloomsu0t.webp",
+      "https://moy-srub.ru//upload/iblock/0fd/1jwzya31quqmsth01io2hmliktbsyq99.webp",
+      "https://moy-srub.ru//upload/iblock/715/i5kvfaxbzejexdzrkm43a27s470053wq.webp",
+      "https://moy-srub.ru//upload/iblock/602/0o8za11shmzdir230vmlji8vagut7ijk.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "44 м2"],
+          ["Размер сруба", "6x6 м"],
+          ["Веранда", "2х6 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "138 000 руб"],
+          ["Ленточный ", "350 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "989 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен \"в чашу\"с лунным пазом;",
+      "пятая стена 6м., рублена в чашу;",
+      "высота потолка - 2,1-2,2 м; высота фронтонов 1,6-1^7 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна - 22-26 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 150/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Сруб бани�\"Хоббит\" | 7x7м",
+    "area": "49",
+    "price": "1 475 000",
+    "log_size": "7x7",
+    "hallway": "1,5х4",
+    "src": "https://moy-srub.ru//upload/iblock/086/l3iwnnjyofrpbu61u2q2osept61uooqp.webp",
+    "description": "Сруб дома / бани 7х7м. дикой рубки, с выносом под веранду на 1,5м. \n В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n *Мы используем фото только своих работ !",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/086/l3iwnnjyofrpbu61u2q2osept61uooqp.webp",
+      "https://moy-srub.ru//upload/iblock/e25/t95f4edvrjwn8huzezc4wc66jp1vuef5.webp",
+      "https://moy-srub.ru//upload/iblock/230/ljdkma246m9x2evn4wz3vfg0wh8aln51.webp",
+      "https://moy-srub.ru//upload/iblock/7a6/hk70j19mqm5bakgszm1suxje6ozsqbq7.webp",
+      "https://moy-srub.ru//upload/iblock/f6f/fc4oqwcf63mg0lcgrr931u89b6i0ye3s.webp",
+      "https://moy-srub.ru//upload/iblock/61f/2thywa0t69g6i13u95714qnlfzphk9gj.webp",
+      "https://moy-srub.ru//upload/iblock/d21/5cbq3t69qgddgcaeuq9cvtpjlhvgengl.webp",
+      "https://moy-srub.ru//upload/iblock/d7c/gep64opl0t2v6t92nd5qhia141wbh4ic.webp",
+      "https://moy-srub.ru//upload/iblock/0d2/nmgynm086wv6639sediplsauwduw8lxt.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "49 м2"],
+          ["Размер сруба", "7x7 м"],
+          ["Веранда", "1,5х4 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "144 000 руб"],
+          ["Ленточный ", "450 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "1 475 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "дикой рубки;",
+      "высота потолка - 2,45 м; высота фронтонов 1,5 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна в среднем - 26-28 см."
+    ],
+    "complection": [
+      "Сруб дикой рубки;",
+      "Cкользящие элементы стропил;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Пятая стена из бревна.;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Сруб бани�\"Медвежонок\" | 6x(6+3)м",
+    "area": "54",
+    "price": "1 640 000",
+    "log_size": "6x(6+3)",
+    "hallway": "3х3",
+    "src": "https://moy-srub.ru//upload/iblock/fcb/13uyqp13lrxj3svnnk9212txaq0xgfi0.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/fcb/13uyqp13lrxj3svnnk9212txaq0xgfi0.webp",
+      "https://moy-srub.ru//upload/iblock/3da/e5mxcu99zgy9xibnixdlaoyxdcgc2ayj.webp",
+      "https://moy-srub.ru//upload/iblock/5a2/sz6oxav8ld39sqbcfvzo5428147b5uyo.webp",
+      "https://moy-srub.ru//upload/iblock/cfc/ck5tv6i5i292k4yomvapm70ja6hy0feo.webp",
+      "https://moy-srub.ru//upload/iblock/5c0/cysl4xwa5sz2psffr41m2d2f4byox4vk.webp",
+      "https://moy-srub.ru//upload/iblock/384/sxq4z2jw6nkhwdja4w2dz2t79fk8xfv7.webp",
+      "https://moy-srub.ru//upload/iblock/d09/9eaem5p3jidxd57tv6dm5l2ew3erovk6.webp",
+      "https://moy-srub.ru//upload/iblock/14d/o61ut4dken16xni7brps3dzxndikqq4c.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "54 м2"],
+          ["Размер сруба", "6x(6+3) м"],
+          ["Веранда", "3х3 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "144 000 руб"],
+          ["Ленточный ", "449 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "1 640 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в стиле \"дикой рубки\" в чашу;",
+      "высота сруба - 2,7-2,8 м; высота фронтонов 2-2,2 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна - 26-30 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 200/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Сруб бани�\"Гризли\" | 6x9м",
+    "area": "54",
+    "price": "1 585 000",
+    "log_size": "6x9",
+    "hallway": "отсутствует",
+    "src": "https://moy-srub.ru//upload/iblock/4dd/psknyraezhmqowp06xlt22ciec519gcj.webp",
+    "description": "В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Проемы под окна и двери вырезаются по месту. \n *Мы используем фото только своих работ и только авторские проекты!",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/4dd/psknyraezhmqowp06xlt22ciec519gcj.webp",
+      "https://moy-srub.ru//upload/iblock/f62/ujwlca4lsny65x5k9wypi0rrlvjk8e8y.webp",
+      "https://moy-srub.ru//upload/iblock/a31/f41n8qsgb0kdlzwjf7kl1fpg435r41od.webp",
+      "https://moy-srub.ru//upload/iblock/e78/ch8em9q3d163opr543wpevvbig40yfzx.webp",
+      "https://moy-srub.ru//upload/iblock/270/vfkwpxkx0qsucniqqwtyb58pk1tpg0g1.webp",
+      "https://moy-srub.ru//upload/iblock/ee4/cdag06l10r3b6bm092tv4yn9te236wdz.webp",
+      "https://moy-srub.ru//upload/iblock/80d/9dlpktjp8g2pjef4u413bt8u4l1khn4q.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь бани", "54 м2"],
+          ["Размер сруба", "6x9 м"],
+          ["Веранда", "отсутствует м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "148000 руб"],
+          ["Ленточный ", "449000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "1 585 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "рублен в стиле \"дикой рубки\" в чашу;",
+      "высота сруба - 2,7-2,8 м; высота фронтонов 1,8-2 м;",
+      "размеры сруба указаны по осям;",
+      "диаметр бревна в среднем - 26-30 см(можно большего диаметра)."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из доски 200/50мм;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
+      "Фронтоны сруба рубленные;",
+      "Рубероид (кровля крыши);",
+      "Утеплитель между бревнами мох или джут."
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Сруб дома�\"Елена\" | 10x8м",
+    "area": "80",
+    "price": "2 285 000",
+    "log_size": "9x6",
+    "hallway": "4,5x2",
+    "src": "https://moy-srub.ru//upload/iblock/d05/qhrxhbhrhjqw5se0q7ugawinx26tuky3.webp",
+    "description": "Сруб дома-бани 10х8м. рубленный в \"чашу\", с выносом под веранду на 2м. \n В подарок, при заказе сруба до конца месяца: обработка сруба под рубанок! \n Характеристика сруба:",
+    "images": [
+      "https://moy-srub.ru//upload/iblock/d05/qhrxhbhrhjqw5se0q7ugawinx26tuky3.webp",
+      "https://moy-srub.ru//upload/iblock/c1d/9ujxg7dmzinv1i4hnut41dsm1z9k9o0g.webp",
+      "https://moy-srub.ru//upload/iblock/d23/slkg9fefifhnhuarhjtkaqcy3ws018ep.webp",
+      "https://moy-srub.ru//upload/iblock/2dc/ytyn3xhufdvp5r6vhh1eyv6ypu4ubvea.webp",
+      "https://moy-srub.ru//upload/iblock/050/i2byriutuydbsh8e0xtptz0jqcwob66c.webp",
+      "https://moy-srub.ru//upload/iblock/d22/43z0tytnzjat5jy1fjdz16zd9dly9zzi.webp",
+      "https://moy-srub.ru//upload/iblock/cdd/aex75w79nhntq0vcwcabf8x1h3yl7mi1.webp",
+      "https://moy-srub.ru//upload/iblock/927/crf2mwz7x9z0dwzmu1j10tf0g0atg4ey.webp"
+    ],
+    "information": [
+      {
+        "title": "Габариты",
+        "values": [
+          ["Площадь дома", "80 м2"],
+          ["Размер сруба", "9x6 м"],
+          ["Веранда", "4,5x2 м"]
+        ]
+      },
+      {
+        "title": "Фундаменты",
+        "values": [
+          ["Свайный с обвязкой", "280 000 руб"],
+          ["Ленточный ", "550 000 руб"]
+        ]
+      },
+      {
+        "title": "Стоимость сруба*",
+        "values": [
+          ["*Включает только доставку и сборку без отделки!", "2 285 000 руб."]
+        ]
+      }
+    ],
+    "characteristic": [
+      "Рублен в чашу, с лунным пазом;",
+      "Высота потолка - 2,5 м;",
+      "Высота фронтонов 1,7-1,9м;",
+      "размеры сруба указаны по осям;",
+      "средний диаметр бревна - 26-30 см."
+    ],
+    "complection": [
+      "Сруб, рубка в чашу;",
+      "Потолочные балки из бревна;",
+      "Стропила из бруса;",
+      "Доска обрезная на обрешетку крыши - 25мм.;",
       "Рубероид (кровля крыши);",
       "Утеплитель между бревнами мох или джут."
     ]
