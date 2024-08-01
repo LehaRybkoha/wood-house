@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
 import {Bath} from '@/app/bani-iz-sruba/page';
+import {toggleModal} from '@/store/modalStore';
 import {SquareDashed} from '@gravity-ui/icons';
 import {Icon, Text} from '@gravity-ui/uikit';
 import {FC} from 'react';
-import {toggleModal} from '@/store/modalStore';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './HouseCard.module.scss';
 
@@ -17,7 +17,6 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
 
     return (
         <div className={css.HouseCard}>
-            <img className={css.HouseCard__image} src={bath.src} alt="" />
             <div className={css.HouseCard__info}>
                 <div className={css.HouseCard__infoBlock}>
                     <div>
@@ -75,10 +74,19 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                 </div>
                 <div className={css.HouseCard__action}>
-                    <ButtonClient view="action" className={css.HouseCard__actionButton} onClick={() => {toggleModal(true)}}>
+                    <ButtonClient
+                        view="action"
+                        className={css.HouseCard__actionButton}
+                        onClick={() => {
+                            toggleModal(true);
+                        }}
+                    >
                         Заказать
                     </ButtonClient>
                 </div>
+            </div>
+            <div>
+                <img className={css.HouseCard__image} src={bath.src} alt="" />
             </div>
         </div>
     );

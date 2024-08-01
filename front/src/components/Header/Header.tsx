@@ -1,14 +1,14 @@
-import {FC} from 'react';
+import {DispatchWithoutAction, FC} from 'react';
 
-import {Button, Text, Icon} from '@gravity-ui/uikit';
 import {Bars, Handset} from '@gravity-ui/icons';
+import {Button, Icon, Text} from '@gravity-ui/uikit';
 import cx from 'classnames';
 import Link from 'next/link';
 import css from './Header.module.scss';
 
 type HeaderProps = {
     className: string;
-    toggleMenu: () => void;
+    toggleMenu: DispatchWithoutAction;
 };
 
 export const Header: FC<HeaderProps> = (props) => {
@@ -18,15 +18,8 @@ export const Header: FC<HeaderProps> = (props) => {
         <div className={cx(className, css.Header)}>
             <div className="container">
                 <div className={css.Header__content}>
-                    <Button 
-                        className={css.Header__burger} 
-                        size='xl'
-                        onClick={toggleMenu}
-                    >
-                        <Icon 
-                            data={Bars} 
-                            size={30}
-                        />
+                    <Button className={css.Header__burger} size="xl" onClick={toggleMenu}>
+                        <Icon data={Bars} size={30} />
                     </Button>
                     <div className={css.Header__logo}>
                         <img
@@ -42,9 +35,7 @@ export const Header: FC<HeaderProps> = (props) => {
                             view="action"
                             pin="circle-circle"
                         >
-                            <Icon 
-                                data={Handset}
-                            />
+                            <Icon data={Handset} />
                             <span className={css.Header__action_text}>Заказать звонок</span>
                         </Button>
                     </div>
@@ -57,11 +48,11 @@ export const Header: FC<HeaderProps> = (props) => {
                         </div>
                         <div className={css.Header__phone}>
                             <Text variant="header-1" className={css.Header__phoneNumber}>
-                                <a className={css.Header__phoneNumberLink} href="">
+                                <a className={css.Header__phoneNumberLink} href="tel:+74991124429">
                                     8 (499) 112-44-29
                                 </a>
                             </Text>
-                            <Link className={css.Header__contacts} href="sds">
+                            <Link className={css.Header__contacts} href="/contacts">
                                 Контакты
                             </Link>
                         </div>

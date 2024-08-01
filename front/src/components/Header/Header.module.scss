@@ -68,7 +68,11 @@
 
 .Header__phoneNumberLink {
     color: #000000;
-    text-decoration: none !important;
+    text-decoration: none;
+    transition: 0.3s ease opacity;
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .Header__contacts {
@@ -76,4 +80,8 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    transition: 0.3s ease opacity;
+    &:hover {
+        opacity: 0.5;
+    }
 }

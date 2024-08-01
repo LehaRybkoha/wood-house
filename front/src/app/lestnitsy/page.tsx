@@ -1,4 +1,3 @@
-import {ImageSlider} from '@/components/ImageSlider/ImageSlider';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
@@ -20,7 +19,7 @@ export default function CutTypes() {
                                 Лестницы
                             </Text>
                             <Text variant="body-3" color="dark-complementary" className="base-desc">
-                                Компания "Русский Сруб" предлагает вашему вниманию так же
+                                Компания "Волжский Дом" предлагает вашему вниманию так же
                                 качественные лестницы. Современный производственный комплекс
                                 позволяет реализовывать самые сложные проекты лестница гарантией от
                                 производителя до 10 лет!

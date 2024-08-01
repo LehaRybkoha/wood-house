@@ -1,6 +1,6 @@
 'use client';
 
-import {FC} from 'react';
+import {FC, useCallback} from 'react';
 
 import css from "./Modal.module.scss";
 
@@ -16,8 +16,6 @@ type FormValues = {
     email: string;
     comment: string;
 };
-
-
 const required = (value: any) => (value ? undefined : 'обязательное поле');
 
 const isEmail = (value: any) =>
@@ -27,7 +25,24 @@ const isPhoneNumber = (value: any) =>
     value && /^\+?[1-9]\d{1,14}$/.test(value) ? undefined : 'недействительный номер телефона';
 
 export const Modal: FC = () => {
-    const { isOpen } = useStore(modalStore);
+    const {isOpen} = useStore(modalStore);
+
+    const handleSubmit = useCallback(async () => {
+        await fetch('https://localhost:8080/submit', {
+            mode: 'no-cors',
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: 'NAMESS',
+                phone: '8009',
+                email: 'mkdlsldf',
+                comment: 'asdasd',
+            }),
+        });
+    }, []);
+
     return (
         <ModalG 
             open={isOpen} 
@@ -122,4 +137,4 @@ export const Modal: FC = () => {
             />
         </ModalG>
     );
-}
+};

@@ -8,7 +8,7 @@
     border-radius: 4px;
     cursor: pointer;
     &:hover .HouseCard__info {
-        top: 20%;
+        transform: translateY(0);
     }
 }
 
@@ -16,16 +16,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 344px;
 }
 
 .HouseCard__info {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    height: 100%;
     width: 100%;
-    top: 85.5%;
+    transform: translateY(calc(100% - 38px));
     z-index: 10;
-    transition: top ease 0.3s;
+    transition: transform ease 0.3s;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 8px;
 }
 
 .HouseCard__infoBlock {
