@@ -1,85 +1,71 @@
+'use client';
+
 import {Card, Text} from '@gravity-ui/uikit';
-import {FC} from 'react';
+import {FC, useState} from 'react';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './DetailedCardPage.module.scss';
 
+import {Bath} from '@/app/bani-iz-sruba/page';
+import {toggleModal} from '@/store/modalStore';
 import cx from 'classnames';
+import {useParams} from 'next/navigation';
 import {DetailedCardPageSlider} from './DetailedCardPageSlider';
-
 export const DetailedCardPage: FC = () => {
+    const params = useParams();
+
+    const [bath, setBath] = useState<Bath | null>(null);
+
+    fetch('http://194.58.126.86/api/baths/' + params.slug, {
+        mode: 'no-cors',
+    })
+        .then((res) => res.json())
+        .then((data) => setBath(data));
+
+    if (!bath) {
+        return null;
+    }
+
     return (
         <div className={css.DetailedCardPage}>
             <div className={css.DetailedCardPage__title}>
                 <Text variant="display-1" color="brand">
-                    Сруб бани "Анна" | 6x4м
+                    {bath.name}
                 </Text>
             </div>
             <div className={css.DetailedCardPage__content}>
                 <div className={css.DetailedCardPage__main}>
                     <div className={css.DetailedCardPage__left}>
-                        <DetailedCardPageSlider />
+                        <DetailedCardPageSlider bath={bath} />
                     </div>
                     <div className={css.DetailedCardPage__right}>
                         <div className={css.DetailedCardPage__details}>
-                            <div className={css.DetailedCardPage__info}>
-                                <Text
-                                    variant="display-3"
-                                    color="complementary"
-                                    className={css.DetailedCardPage__infoTitle}
-                                >
-                                    Габариты
-                                </Text>
-                                <div className={css.DetailedCardPage__infoList}>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">Площадь бани</Text>
-                                        <Text variant="body-3">24 м2</Text>
-                                    </div>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">Размер сруба</Text>
-                                        <Text variant="body-3">6x4 м</Text>
-                                    </div>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">Веранда</Text>
-                                        <Text variant="body-3">отсутствует м</Text>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={css.DetailedCardPage__info}>
-                                <Text
-                                    variant="display-3"
-                                    color="complementary"
-                                    className={css.DetailedCardPage__infoTitle}
-                                >
-                                    Фундаменты
-                                </Text>
-                                <div className={css.DetailedCardPage__infoList}>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">Свайный с обвязкой</Text>
-                                        <Text variant="body-3">95 800 руб</Text>
-                                    </div>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">Ленточный</Text>
-                                        <Text variant="body-3">245 000 руб</Text>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className={css.DetailedCardPage__info}>
-                                <Text
-                                    variant="display-3"
-                                    color="complementary"
-                                    className={css.DetailedCardPage__infoTitle}
-                                >
-                                    Стоимость сруба*
-                                </Text>
-                                <div className={css.DetailedCardPage__infoList}>
-                                    <div className={css.DetailedCardPage__infoListItem}>
-                                        <Text variant="body-3">
-                                            *Включает только доставку и сборку без отделки!
+                            {bath.information.map((item) => {
+                                return (
+                                    <div className={css.DetailedCardPage__info}>
+                                        <Text
+                                            variant="display-3"
+                                            color="complementary"
+                                            className={css.DetailedCardPage__infoTitle}
+                                        >
+                                            {item.title}
                                         </Text>
-                                        <Text variant="body-3"></Text>
+                                        <div className={css.DetailedCardPage__infoList}>
+                                            {item.values.map((value) => {
+                                                return (
+                                                    <div
+                                                        className={
+                                                            css.DetailedCardPage__infoListItem
+                                                        }
+                                                    >
+                                                        <Text variant="body-3">{value[0]}</Text>
+                                                        <Text variant="body-3">{value[1]}</Text>
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                );
+                            })}
                         </div>
                         <div className={css.DetailedCardPage__action}>
                             <Text
@@ -87,13 +73,16 @@ export const DetailedCardPage: FC = () => {
                                 color="brand"
                                 className={css.DetailedCardPage__priceText}
                             >
-                                359 000 руб.
+                                {bath.price}
                             </Text>
                             <div>
                                 <ButtonClient
                                     className={css.DetailedCardPage__actionButton}
                                     size="xl"
                                     view="action"
+                                    onClick={() => {
+                                        toggleModal(true);
+                                    }}
                                 >
                                     Заказать
                                 </ButtonClient>
@@ -105,11 +94,7 @@ export const DetailedCardPage: FC = () => {
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text variant="body-3" color="dark-secondary" className="base-desc">
-                                Сруб бани 6х4м. рубленный в "лапу". Пятая стена 4м. В подарок, при
-                                заказе сруба до конца месяца: обработка сруба под рубанок!
-                                Планировка сруба свободная. Перегородка ставится по месту на
-                                участке, проемы под окна и двери так же вырезаются по месту. *Мы
-                                используем фото только своих работ!
+                                {bath.description}
                             </Text>
                             <div className={css.DetailedCardPage__additional}>
                                 <div className={css.DetailedCardPage__additionalLeft}>
@@ -125,15 +110,9 @@ export const DetailedCardPage: FC = () => {
                                         variant="body-3"
                                     >
                                         <ul>
-                                            <li>рублен в "лапу", внутри тесанные стены;</li>
-                                            <li>
-                                                высота потолка - 2,1-2,2 м; высота мансарды 2,2-2,4
-                                                м;
-                                            </li>
-                                            <li>размеры сруба указаны по внутренней стороне;</li>
-                                            <li>
-                                                диаметр бревна - 22-26 см(можно большего диаметра).
-                                            </li>
+                                            {bath.characteristic.map((char) => {
+                                                return <li>{char}</li>;
+                                            })}
                                         </ul>
                                     </Text>
                                 </div>
@@ -150,17 +129,9 @@ export const DetailedCardPage: FC = () => {
                                         variant="body-3"
                                     >
                                         <ul>
-                                            <li>
-                                                Сруб-пятистенок, пятая стена 4м. (возможна замена на
-                                                5м. с доплатой), рубка в лафет;
-                                            </li>
-                                            <li>Лаги пола из бревна;</li>
-                                            <li>Потолочные балки из бревна;</li>
-                                            <li>Стропила из бруса;</li>
-                                            <li>Доска обрезная на обрешетку крыши - 25мм.;</li>
-                                            <li>Фронтоны сруба зашиты доской - 1 сорт;</li>
-                                            <li>Рубероид (кровля крыши);</li>
-                                            <li>Утеплитель между бревнами мох или джут.</li>
+                                            {bath.complection.map((comp) => {
+                                                return <li>{comp}</li>;
+                                            })}
                                         </ul>
                                     </Text>
                                 </div>

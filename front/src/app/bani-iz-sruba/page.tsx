@@ -11,7 +11,9 @@ type BathInfoItem = {
 
 export type Bath = {
     id: number;
+    name: string;
     area: number;
+    description: string;
     price: string;
     log_size: string;
     hallway: string;

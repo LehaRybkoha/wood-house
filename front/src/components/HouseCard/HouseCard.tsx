@@ -75,6 +75,13 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                 </div>
                 <div className={css.HouseCard__action}>
                     <ButtonClient
+                        view="flat-action"
+                        className={css.HouseCard__actionButton}
+                        href={`${window.location.pathname}/${bath.id}`}
+                    >
+                        Подробнее
+                    </ButtonClient>
+                    <ButtonClient
                         view="action"
                         className={css.HouseCard__actionButton}
                         onClick={() => {
