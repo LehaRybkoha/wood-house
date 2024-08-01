@@ -2,20 +2,14 @@
 
 import {FC, useCallback} from 'react';
 
-import css from "./Modal.module.scss";
+import css from './Modal.module.scss';
 
 import {modalStore, toggleModal} from '@/store/modalStore';
-import {Field as BaseField, Form} from 'react-final-form';
 import {Xmark} from '@gravity-ui/icons';
-import {Icon, Text, TextInput, Modal as ModalG, TextArea, Button} from '@gravity-ui/uikit';
+import {Button, Icon, Modal as ModalG, Text, TextArea, TextInput} from '@gravity-ui/uikit';
 import {useStore} from '@tanstack/react-store';
+import {Field as BaseField, Form} from 'react-final-form';
 
-type FormValues = {
-    name: string;
-    phone: string;
-    email: string;
-    comment: string;
-};
 const required = (value: any) => (value ? undefined : 'обязательное поле');
 
 const isEmail = (value: any) =>
@@ -27,6 +21,7 @@ const isPhoneNumber = (value: any) =>
 export const Modal: FC = () => {
     const {isOpen} = useStore(modalStore);
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const handleSubmit = useCallback(async () => {
         await fetch('https://localhost:8080/submit', {
             mode: 'no-cors',
@@ -44,15 +39,19 @@ export const Modal: FC = () => {
     }, []);
 
     return (
-        <ModalG 
-            open={isOpen} 
-            onClose={() => {toggleModal(false)}}
+        <ModalG
+            open={isOpen}
+            onClose={() => {
+                toggleModal(false);
+            }}
         >
-            <Form 
-                onSubmit={() => {alert("1234")}}
-                render={({handleSubmit, submitting, pristine, hasValidationErrors}) => (
+            <Form
+                onSubmit={() => {
+                    alert('1234');
+                }}
+                render={({submitting, pristine, hasValidationErrors}) => (
                     <div className={css.Modal__content}>
-                        <Text variant='header-1' className={css.Modal__header}>
+                        <Text variant="header-1" className={css.Modal__header}>
                             Заказaть проект
                         </Text>
                         <form className={css.Modal__body}>
@@ -66,9 +65,7 @@ export const Modal: FC = () => {
                                             autoComplete="username"
                                             errorMessage={meta.error}
                                             validationState={
-                                                meta.touched && meta.error
-                                                    ? 'invalid'
-                                                    : undefined
+                                                meta.touched && meta.error ? 'invalid' : undefined
                                             }
                                             hasClear
                                         ></TextInput>
@@ -83,52 +80,52 @@ export const Modal: FC = () => {
                                             autoComplete="phone"
                                             errorMessage={meta.error}
                                             validationState={
-                                                meta.touched && meta.error
-                                                    ? 'invalid'
-                                                    : undefined
+                                                meta.touched && meta.error ? 'invalid' : undefined
                                             }
                                             hasClear
                                         ></TextInput>
                                     )}
                                 </BaseField>
                                 <BaseField name="email" validate={isEmail}>
-                                {({input, meta}) => (
-                                    <TextInput
-                                        placeholder="email"
-                                        {...input}
-                                        type="text"
-                                        autoComplete="mail"
-                                        errorMessage={meta.error}
-                                        validationState={
-                                            meta.touched && meta.error
-                                                ? 'invalid'
-                                                : undefined
-                                        }
-                                        hasClear
-                                    ></TextInput>
-                                )}
+                                    {({input, meta}) => (
+                                        <TextInput
+                                            placeholder="email"
+                                            {...input}
+                                            type="text"
+                                            autoComplete="mail"
+                                            errorMessage={meta.error}
+                                            validationState={
+                                                meta.touched && meta.error ? 'invalid' : undefined
+                                            }
+                                            hasClear
+                                        ></TextInput>
+                                    )}
                                 </BaseField>
                                 <BaseField name="comment">
-                                {({input, meta}) => (
-                                    <TextArea 
-                                        placeholder="Комментарий"
-                                        {...input}
-                                        minRows={5}
-                                        maxRows={10}
-                                    ></TextArea>
-                                )}
+                                    {({input}) => (
+                                        <TextArea
+                                            placeholder="Комментарий"
+                                            {...input}
+                                            minRows={5}
+                                            maxRows={10}
+                                        ></TextArea>
+                                    )}
                                 </BaseField>
                             </div>
                             <div className={css.Modal__row}>
                                 <Button
                                     type="submit"
                                     disabled={submitting || pristine || hasValidationErrors}
-                                >Отправить</Button>
+                                >
+                                    Отправить
+                                </Button>
                             </div>
                         </form>
-                        <Button 
-                            className={css.Modal__closeButton} 
-                            onClick={() => {toggleModal(false)}}
+                        <Button
+                            className={css.Modal__closeButton}
+                            onClick={() => {
+                                toggleModal(false);
+                            }}
                         >
                             <Icon data={Xmark} />
                         </Button>

@@ -1,4 +1,3 @@
-import {ImageSlider} from '@/components/ImageSlider/ImageSlider';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 

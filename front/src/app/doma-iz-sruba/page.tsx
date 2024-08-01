@@ -3,6 +3,11 @@ import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
+type BathInfoItem = {
+    title: string;
+    values: string[][];
+};
+
 export type House = {
     id: number;
     area: number;
@@ -10,6 +15,10 @@ export type House = {
     log_size: string;
     hallway: string;
     src: string;
+    images: string[];
+    information: BathInfoItem[];
+    characteristic: string[];
+    complection: string[];
 };
 
 async function getData() {
@@ -245,7 +254,10 @@ export default async function Houses() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Цены на рубленные дома "в чашу" с "лунным пазом"
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32, overflowX: "scroll", maxWidth: "100%"}}>
+                            <div
+                                className="scroll-x"
+                                style={{marginTop: 32, overflowX: 'scroll', maxWidth: '100%'}}
+                            >
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
@@ -408,7 +420,10 @@ export default async function Houses() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Цены на рубленные дома "в чашу" с "лунным пазом"
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32, overflow: "scroll", maxWidth: "100%"}}>
+                            <div
+                                className="scroll-x"
+                                style={{marginTop: 32, overflow: 'scroll', maxWidth: '100%'}}
+                            >
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
