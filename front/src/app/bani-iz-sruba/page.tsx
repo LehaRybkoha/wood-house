@@ -254,7 +254,7 @@ export default async function Baths() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Бани "в лапу" без веранды
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32}}>
+                            <div className="scroll-x" style={{marginTop: 32, overflowX: 'scroll', maxWidth: '100%'}}>
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>
@@ -363,7 +363,7 @@ export default async function Baths() {
                             <Text variant="display-2" color="complementary" className="main-title">
                                 Бани "в чашу" с выносом под веранду - 2 метра
                             </Text>
-                            <div className="scroll-x" style={{marginTop: 32}}>
+                            <div className="scroll-x" style={{marginTop: 32, overflowX: 'auto', maxWidth: '100%'}}>
                                 <table className="table-srubi table-xs">
                                     <thead>
                                         <tr>

@@ -12,7 +12,7 @@
     gap: 16px;
     margin-top: 16px;
 
-    @include media(md) {
+    @include media(lg) {
         flex-wrap: wrap;
     }
 }

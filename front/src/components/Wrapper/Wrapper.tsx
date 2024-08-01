@@ -21,7 +21,7 @@ export type AppProps = {
 export const Wrapper: FC<AppProps> = ({children}) => {
     const [theme] = React.useState<Theme>(DEFAULT_THEME);
 
-    const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isMenuOpen, setMenuOpen] = useState(true);
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
@@ -34,8 +34,8 @@ export const Wrapper: FC<AppProps> = ({children}) => {
         <ThemeProvider theme={theme}>
             <div className={css.Wrapper}>
                 <Header className={css.WrapperHeader} toggleMenu={toggleMenu} />
-                <div className={css.WrapperMain}>
-                    <Aside className={`${css.WrapperMenu} ${isMenuOpen ? css.WrapperMenuOpened : ''}`} />
+                <div className={`${css.WrapperMain} ${isMenuOpen ? css.WrapperMenuOpened : ''}`}>
+                    <Aside className={css.WrapperMenu} />
                     <div className={css.WrapperContent}>{children}</div>
                 </div>
                 <Footer className={css.WrapperFooter} />
