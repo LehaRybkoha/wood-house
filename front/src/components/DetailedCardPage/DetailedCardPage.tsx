@@ -1,7 +1,7 @@
 'use client';
 
 import {Card, Text} from '@gravity-ui/uikit';
-import {FC, useState} from 'react';
+import {FC, useEffect, useState} from 'react';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './DetailedCardPage.module.scss';
 
@@ -15,11 +15,13 @@ export const DetailedCardPage: FC = () => {
 
     const [bath, setBath] = useState<Bath | null>(null);
 
-    fetch('http://194.58.126.86/api/baths/' + params.slug, {
-        mode: 'no-cors',
-    })
-        .then((res) => res.json())
-        .then((data) => setBath(data));
+    useEffect(() => {
+        fetch('http://194.58.126.86/api/baths/' + params.slug, {
+            mode: 'no-cors',
+        })
+            .then((res) => res.json())
+            .then((data) => setBath(data));
+    }, []);
 
     if (!bath) {
         return null;
