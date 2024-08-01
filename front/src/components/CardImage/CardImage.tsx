@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import {FC, ReactNode} from 'react';
 import css from './CardImage.module.scss';
@@ -10,6 +12,9 @@ type CardImageProps = {
 
 export const CardImage: FC<CardImageProps> = (props) => {
     const {title, action, link} = props;
+
+    const resHouse = fetch('http://194.58.126.86/api/houses');
+
     return (
         <Link href={link} className={css.CardImage}>
             <div className={css.CardImage__image}>

@@ -9,12 +9,11 @@ import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
-    const resBath = await fetch('http://194.58.126.86/api/baths');
-    const resHouse = await fetch('http://194.58.126.86/api/houses');
+    const resBath = await fetch('http://194.58.126.86/api/baths', {mode: 'no-cors'});
+    const resHouse = await fetch('http://194.58.126.86/api/houses', {mode: 'no-cors'});
 
     if (!resBath.ok || !resHouse.ok) {
-        // This will activate the closest `error.js` Error Boundary
-        throw new Error('Failed to fetch data');
+        return [];
     }
 
     const dataBath: Bath[] = await resBath.json();

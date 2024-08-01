@@ -26,7 +26,7 @@ async function getData() {
     const res = await fetch('http://194.58.126.86/api/baths');
 
     if (!res.ok) {
-        throw new Error('Failed to fetch data');
+        return [];
     }
 
     return res.json();
