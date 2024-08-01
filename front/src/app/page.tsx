@@ -5,25 +5,24 @@ import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Promotion} from '@/components/Promotion/Promotion';
 import {Card, Text} from '@gravity-ui/uikit';
 import {Bath} from './bani-iz-sruba/page';
-import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
     const resBath = await fetch('http://194.58.126.86/api/baths', {mode: 'no-cors'});
-    const resHouse = await fetch('http://194.58.126.86/api/houses', {mode: 'no-cors'});
+    // const resHouse = await fetch('http://194.58.126.86/api/houses', {mode: 'no-cors'});
 
-    if (!resBath.ok || !resHouse.ok) {
+    if (!resBath.ok) {
         return [];
     }
 
     const dataBath: Bath[] = await resBath.json();
-    const dataHouses: House[] = await resHouse.json();
+    // const dataHouses: House[] = await resHouse.json();
 
-    return dataBath.concat(dataHouses);
+    return dataBath;
 }
 
 export default async function Home() {
-    const data = await getData();
+    const dataBath = await getData();
 
     return (
         <div className={css.Home}>
@@ -342,8 +341,8 @@ export default async function Home() {
                                 Проекты бань из бревна
                             </Text>
                             <div className={css.Home__projects}>
-                                {data.map((item) => (
-                                    <HouseCard key={item.id} bath={item} />
+                                {dataBath.map((item) => (
+                                    <HouseCard route="bani-iz-sruba" key={item.id} item={item} />
                                 ))}
                             </div>
                         </div>

@@ -97,7 +97,7 @@ export default async function Baths() {
                             </Text>
                             <div className={css.Baths__projects}>
                                 {baths.map((item) => (
-                                    <HouseCard key={item.id} bath={item} />
+                                    <HouseCard route="bani-iz-sruba" key={item.id} item={item} />
                                 ))}
                             </div>
                         </div>

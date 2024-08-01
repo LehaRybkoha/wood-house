@@ -12,6 +12,8 @@ export type House = {
     id: number;
     area: number;
     price: string;
+    name: string;
+    description: string;
     log_size: string;
     hallway: string;
     src: string;
@@ -95,7 +97,7 @@ export default async function Houses() {
                             </Text>
                             <div className={css.Houses__projects}>
                                 {houses.map((item) => (
-                                    <HouseCard key={item.id} bath={item} />
+                                    <HouseCard route="doma-iz-sruba" key={item.id} item={item} />
                                 ))}
                             </div>
                         </div>

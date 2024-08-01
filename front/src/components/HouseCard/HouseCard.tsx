@@ -9,11 +9,12 @@ import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './HouseCard.module.scss';
 
 type HouseCardProps = {
-    bath: Bath;
+    item: Bath;
+    route: string;
 };
 
 export const HouseCard: FC<HouseCardProps> = (props) => {
-    const {bath} = props;
+    const {item, route} = props;
 
     return (
         <div className={css.HouseCard}>
@@ -22,7 +23,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     <div>
                         <Text variant="subheader-1" color="light-primary">
                             <Icon className={css.HouseCard__icon} data={SquareDashed}></Icon>
-                            {bath.area}
+                            {item.area}
                         </Text>{' '}
                         <Text color="light-primary" variant="caption-2">
                             м2
@@ -33,7 +34,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                             цена от{' '}
                         </Text>
                         <Text variant="subheader-2" color="light-primary">
-                            {bath.price} руб.
+                            {item.price} руб.
                         </Text>
                     </div>
                 </div>
@@ -45,7 +46,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            {bath.area} м2
+                            {item.area} м2
                         </Text>
                     </div>
                 </div>
@@ -57,7 +58,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            {bath.log_size} м
+                            {item.log_size} м
                         </Text>
                     </div>
                 </div>
@@ -69,7 +70,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </div>
                     <div>
                         <Text variant="subheader-2" color="light-primary">
-                            {bath.hallway} м
+                            {item.hallway} м
                         </Text>
                     </div>
                 </div>
@@ -77,7 +78,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     <ButtonClient
                         view="flat-action"
                         className={css.HouseCard__actionButton}
-                        href={`${window.location.pathname}/${bath.id}`}
+                        href={`${route}/${item.id}`}
                     >
                         Подробнее
                     </ButtonClient>
@@ -93,7 +94,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                 </div>
             </div>
             <div>
-                <img className={css.HouseCard__image} src={bath.src} alt="" />
+                <img className={css.HouseCard__image} src={item.src} alt="" />
             </div>
         </div>
     );
