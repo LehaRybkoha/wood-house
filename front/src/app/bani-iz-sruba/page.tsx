@@ -25,7 +25,11 @@ export type Bath = {
 };
 
 async function getData() {
-    const res = await fetch('http://194.58.126.86/api/baths');
+    const res = await fetch('http://194.58.126.86/api/baths', {
+        headers: {
+            'Cache-Control': 'no-store',
+        },
+    });
 
     if (!res.ok) {
         return [];

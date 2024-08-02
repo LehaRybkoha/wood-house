@@ -1,6 +1,7 @@
 import {Banner} from '@/components/Banner/Banner';
 import {Promotion} from '@/components/Promotion/Promotion';
 import {Card, Text} from '@gravity-ui/uikit';
+import Link from 'next/link';
 import css from './styles.module.scss';
 
 export default function Contacts() {
@@ -80,20 +81,24 @@ export default function Contacts() {
                                 Телефоны
                             </Text>
                             <div className={css.Contacts__phones}>
-                                <Text
-                                    variant="subheader-3"
-                                    color="light-primary"
-                                    className={css.Contacts__phone}
-                                >
-                                    +7 (495) 768-17-09
-                                </Text>
-                                <Text
-                                    variant="subheader-3"
-                                    color="light-primary"
-                                    className={css.Contacts__phone}
-                                >
-                                    +7 (812) 920-32-45
-                                </Text>
+                                <Link href="tel:+74957681709">
+                                    <Text
+                                        variant="subheader-3"
+                                        color="light-primary"
+                                        className={css.Contacts__phone}
+                                    >
+                                        +7 (495) 768-17-09
+                                    </Text>
+                                </Link>
+                                <Link href="tel:+78129203245">
+                                    <Text
+                                        variant="subheader-3"
+                                        color="light-primary"
+                                        className={css.Contacts__phone}
+                                    >
+                                        +7 (812) 920-32-45
+                                    </Text>
+                                </Link>
                             </div>
                             <Text
                                 variant="header-1"
@@ -105,13 +110,15 @@ export default function Contacts() {
                             >
                                 Email
                             </Text>
-                            <Text
-                                variant="subheader-3"
-                                color="light-primary"
-                                className={css.Contacts__phone}
-                            >
-                                info@moy-srub.ru
-                            </Text>
+                            <Link href="mailto:info@moy-srub.ru">
+                                <Text
+                                    variant="subheader-3"
+                                    color="light-primary"
+                                    className={css.Contacts__phone}
+                                >
+                                    info@moy-srub.ru
+                                </Text>
+                            </Link>
                             <Text
                                 variant="header-1"
                                 color="complementary"
@@ -159,20 +166,24 @@ export default function Contacts() {
                                 Телефоны
                             </Text>
                             <div className={css.Contacts__phones}>
-                                <Text
-                                    variant="subheader-3"
-                                    color="light-primary"
-                                    className={css.Contacts__phone}
-                                >
-                                    +7 (812) 920-32-45
-                                </Text>
-                                <Text
-                                    variant="subheader-3"
-                                    color="light-primary"
-                                    className={css.Contacts__phone}
-                                >
-                                    +7 (919) 786-87-45
-                                </Text>
+                                <Link href="tel:+78129203245">
+                                    <Text
+                                        variant="subheader-3"
+                                        color="light-primary"
+                                        className={css.Contacts__phone}
+                                    >
+                                        +7 (812) 920-32-45
+                                    </Text>
+                                </Link>
+                                <Link href="tel:+79197868745">
+                                    <Text
+                                        variant="subheader-3"
+                                        color="light-primary"
+                                        className={css.Contacts__phone}
+                                    >
+                                        +7 (919) 786-87-45
+                                    </Text>
+                                </Link>
                             </div>
                             <Text
                                 variant="header-1"
@@ -184,13 +195,15 @@ export default function Contacts() {
                             >
                                 Email
                             </Text>
-                            <Text
-                                variant="subheader-3"
-                                color="light-primary"
-                                className={css.Contacts__phone}
-                            >
-                                info@moy-srub.ru
-                            </Text>
+                            <Link href="mailto:info@moy-srub.ru">
+                                <Text
+                                    variant="subheader-3"
+                                    color="light-primary"
+                                    className={css.Contacts__phone}
+                                >
+                                    info@moy-srub.ru
+                                </Text>
+                            </Link>
                             <Text
                                 variant="header-1"
                                 color="complementary"

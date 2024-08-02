@@ -16,20 +16,16 @@ export const DetailedCardPage: FC = () => {
     const [bath, setBath] = useState<Bath | null>(null);
 
     useEffect(() => {
-        if (window.location.pathname === 'doma-iz-sruba') {
-            fetch('http://194.58.126.86/api/houses/' + params.slug, {
-                mode: 'no-cors',
-            })
+        if (window.location.pathname.includes('doma-iz-sruba')) {
+            fetch('http://194.58.126.86/api/houses/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         } else {
-            fetch('http://194.58.126.86/api/houses/' + params.slug, {
-                mode: 'no-cors',
-            })
+            fetch('http://194.58.126.86/api/baths/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         }
-    }, []);
+    }, [params]);
 
     if (!bath) {
         return null;
@@ -51,7 +47,7 @@ export const DetailedCardPage: FC = () => {
                         <div className={css.DetailedCardPage__details}>
                             {bath.information.map((item) => {
                                 return (
-                                    <div className={css.DetailedCardPage__info}>
+                                    <div key={item.title} className={css.DetailedCardPage__info}>
                                         <Text
                                             variant="display-3"
                                             color="complementary"
@@ -60,9 +56,10 @@ export const DetailedCardPage: FC = () => {
                                             {item.title}
                                         </Text>
                                         <div className={css.DetailedCardPage__infoList}>
-                                            {item.values.map((value) => {
+                                            {item.values.map((value, idx) => {
                                                 return (
                                                     <div
+                                                        key={idx}
                                                         className={
                                                             css.DetailedCardPage__infoListItem
                                                         }
@@ -121,7 +118,7 @@ export const DetailedCardPage: FC = () => {
                                     >
                                         <ul>
                                             {bath.characteristic.map((char) => {
-                                                return <li>{char}</li>;
+                                                return <li key={char}>{char}</li>;
                                             })}
                                         </ul>
                                     </Text>
@@ -140,7 +137,7 @@ export const DetailedCardPage: FC = () => {
                                     >
                                         <ul>
                                             {bath.complection.map((comp) => {
-                                                return <li>{comp}</li>;
+                                                return <li key={comp}>{comp}</li>;
                                             })}
                                         </ul>
                                     </Text>

@@ -3,7 +3,6 @@
 import {FC, useCallback, useState} from 'react';
 
 import {Bath} from '@/app/bani-iz-sruba/page';
-import {Fancybox} from '../Fancybox/Fancybox';
 import css from './DetailedCardPage.module.scss';
 
 type DetailedCardPageSliderProps = {
@@ -22,15 +21,13 @@ export const DetailedCardPageSlider: FC<DetailedCardPageSliderProps> = (props) =
     return (
         <div className={css.DetailedCardPage__slider}>
             <div className={css.DetailedCardPage__sliderMainImage}>
-                <Fancybox>
-                    <a href={mainImage} data-fancybox="gallery">
-                        <img
-                            className={css.DetailedCardPage__sliderMainImageImg}
-                            src={mainImage}
-                            alt=""
-                        />
-                    </a>
-                </Fancybox>
+                <a href={mainImage} data-fancybox="gallery">
+                    <img
+                        className={css.DetailedCardPage__sliderMainImageImg}
+                        src={mainImage}
+                        alt=""
+                    />
+                </a>
             </div>
             <div className={css.DetailedCardPage__sliderList}>
                 {bath.images.map((src) => {

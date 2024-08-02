@@ -16,6 +16,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    @include media(md) {
+        justify-content: center;
+    }
 }
 
 .Home__quality {

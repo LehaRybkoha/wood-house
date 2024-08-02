@@ -29,17 +29,23 @@
 }
 
 .Header__image {
-    max-width: 95px;
-    margin-right: 24px;
+    margin: 0 24px;
 }
 
 .Header__action {
-    color: #ffffff !important;
-}
-
-.Header__action_text {
     @include media(lg) {
         display: none;
+    }
+}
+
+.Header__action_lg {
+    display: none;
+}
+
+.Header__action_lg {
+    color: #ffffff !important;
+    @include media(lg) {
+        display: block;
     }
 }
 

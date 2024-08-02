@@ -9,6 +9,8 @@
 
 .CardImage__imagePic {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .CardImage__content {
@@ -18,4 +20,8 @@
 
 .CardImage__action {
     margin-top: 32px;
+}
+
+.CardImage__image {
+    height: 250px;
 }

@@ -1,8 +1,12 @@
+'use client';
+
 import {DispatchWithoutAction, FC} from 'react';
 
+import {toggleModal} from '@/store/modalStore';
 import {Bars, Handset} from '@gravity-ui/icons';
 import {Button, Icon, Text} from '@gravity-ui/uikit';
 import cx from 'classnames';
+import Image from 'next/image';
 import Link from 'next/link';
 import css from './Header.module.scss';
 
@@ -21,23 +25,38 @@ export const Header: FC<HeaderProps> = (props) => {
                     <Button className={css.Header__burger} size="xl" onClick={toggleMenu}>
                         <Icon data={Bars} size={30} />
                     </Button>
-                    <div className={css.Header__logo}>
-                        <img
+                    <Link href="/" className={css.Header__logo}>
+                        <Image
                             className={css.Header__image}
-                            src="https://moy-srub.ru/bitrix/templates/moysrub/images/logo.png"
-                            alt=""
+                            src={`/logo.png`}
+                            alt={'alt'}
+                            width="110"
+                            height="110"
                         />
-                    </div>
+                    </Link>
                     <div className={css.Header__actions}>
-                        <Button
-                            className={css.Header__action}
-                            size="xl"
-                            view="action"
-                            pin="circle-circle"
-                        >
-                            <Icon data={Handset} />
-                            <span className={css.Header__action_text}>Заказать звонок</span>
-                        </Button>
+                        <div className={css.Header__action}>
+                            <Button
+                                onClick={() => toggleModal(true)}
+                                size="xl"
+                                view="action"
+                                pin="circle-circle"
+                            >
+                                <Icon data={Handset} />
+                                <span className={css.Header__action_text}>Заказать звонок</span>
+                            </Button>
+                        </div>
+                        <div className={css.Header__action_lg}>
+                            <Button
+                                onClick={() => toggleModal(true)}
+                                size="xl"
+                                view="action"
+                                pin="circle-circle"
+                            >
+                                <Icon data={Handset} />
+                                <span className={css.Header__action_text}>Звонок</span>
+                            </Button>
+                        </div>
                     </div>
                     <div className={css.Header__info}>
                         <div className={css.Header__address}>

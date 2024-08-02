@@ -23,10 +23,10 @@ export const Footer: FC<HeaderProps> = (props) => {
                                     Московская область, Дзержинское ш., вл. 7/7, участок 106, “Белая
                                     Дача”
                                 </Text>
-                                <a className={css.Address__ListItemPhone} href="">
+                                <a className={css.Address__ListItemPhone} href="tel:+74957681709">
                                     +7 (495) 768-17-09
                                 </a>
-                                <a className={css.Address__ListItemPhone} href="">
+                                <a className={css.Address__ListItemPhone} href="tel:+78129203245">
                                     +7 (812) 920-32-45
                                 </a>
                             </div>
@@ -35,10 +35,10 @@ export const Footer: FC<HeaderProps> = (props) => {
                                 <Text variant="body-3">
                                     Россия, Санкт-Петербург, улица Коллонтай, 18
                                 </Text>
-                                <a className={css.Address__ListItemPhone} href="">
+                                <a className={css.Address__ListItemPhone} href="tel:+78129203245">
                                     +7 (812) 920-32-45
                                 </a>
-                                <a className={css.Address__ListItemPhone} href="">
+                                <a className={css.Address__ListItemPhone} href="tel:+79197868745">
                                     +7 (919) 786-87-45
                                 </a>
                             </div>

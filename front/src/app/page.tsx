@@ -5,24 +5,34 @@ import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Promotion} from '@/components/Promotion/Promotion';
 import {Card, Text} from '@gravity-ui/uikit';
 import {Bath} from './bani-iz-sruba/page';
+import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
-    const resBath = await fetch('http://194.58.126.86/api/baths', {mode: 'no-cors'});
-    // const resHouse = await fetch('http://194.58.126.86/api/houses', {mode: 'no-cors'});
-
-    if (!resBath.ok) {
-        return [];
-    }
+    const resBath = await fetch('http://194.58.126.86/api/baths', {
+        mode: 'no-cors',
+        headers: {
+            'Cache-Control': 'no-store',
+        },
+    });
+    const resHouse = await fetch('http://194.58.126.86/api/houses', {
+        mode: 'no-cors',
+        headers: {
+            'Cache-Control': 'no-store',
+        },
+    });
 
     const dataBath: Bath[] = await resBath.json();
-    // const dataHouses: House[] = await resHouse.json();
+    const dataHouses: House[] = await resHouse.json();
 
-    return dataBath;
+    return {
+        baths: dataBath ?? [],
+        houses: dataHouses ?? [],
+    };
 }
 
 export default async function Home() {
-    const dataBath = await getData();
+    const data = await getData();
 
     return (
         <div className={css.Home}>
@@ -83,7 +93,7 @@ export default async function Home() {
                         <div className={css.Home__qualityItem}>
                             <img
                                 className={css.Home__qualityIcon}
-                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/check-1.webp"
+                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/check-2.webp"
                                 alt=""
                             />
                             <Text
@@ -91,14 +101,14 @@ export default async function Home() {
                                 variant="body-3"
                                 color="light-primary"
                             >
-                                На этапе заготовки - выбираем лес исключительно высшего качества,
-                                прямые квоты на добычу.
+                                На этапе рубки - если бревно не соответствует стандартам, то оно
+                                просто не используется
                             </Text>
                         </div>
                         <div className={css.Home__qualityItem}>
                             <img
                                 className={css.Home__qualityIcon}
-                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/check-1.webp"
+                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/check-3.webp"
                                 alt=""
                             />
                             <Text
@@ -106,8 +116,8 @@ export default async function Home() {
                                 variant="body-3"
                                 color="light-primary"
                             >
-                                На этапе заготовки - выбираем лес исключительно высшего качества,
-                                прямые квоты на добычу.
+                                На этапе сборки - мы еще раз проверяем бревна и пиломатериалы на
+                                соответствие стандарту.
                             </Text>
                         </div>
                     </div>
@@ -132,6 +142,7 @@ export default async function Home() {
                             <div className={css.Home__cards}>
                                 <CardImage
                                     link="/blog/kak-my-otbiraem-les-dlya-srubov"
+                                    image="https://moy-srub.ru/upload/iblock/30e/twjvp12izvzjzoadyyrcnk148ayhbt1g.webp"
                                     title={
                                         <Text variant="header-1" color="complementary">
                                             Как мы отбираем лес для срубов
@@ -149,9 +160,10 @@ export default async function Home() {
                                 />
                                 <CardImage
                                     link="/blog/razlichiya-i-skhozhest-russkoy-bani-i-finskoy-sauny"
+                                    image="https://moy-srub.ru/upload/iblock/f85/67hhienkxapy9e221lv3khyf4x6aofx1.webp"
                                     title={
                                         <Text variant="header-1" color="complementary">
-                                            Как мы отбираем лес для срубов
+                                            Различия и схожесть русской бани и финской сауны
                                         </Text>
                                     }
                                     action={
@@ -166,9 +178,10 @@ export default async function Home() {
                                 />
                                 <CardImage
                                     link="/blog/preimushchestva-vybora-sruba-iz-dereva/"
+                                    image="https://moy-srub.ru/upload/iblock/7df/rm06wzrbgf3gm0blzcouiydcoyojni54.webp"
                                     title={
                                         <Text variant="header-1" color="complementary">
-                                            Как мы отбираем лес для срубов
+                                            Преимущества выбора сруба из дерева
                                         </Text>
                                     }
                                     action={
@@ -192,7 +205,7 @@ export default async function Home() {
                         variant="display-1"
                         color="light-primary"
                     >
-                        Контроль качества в три этапа
+                        Ваши преимущества
                     </Text>
                     <div className={css.Home__advantagesList}>
                         <div className={css.Home__advantagesCard}>
@@ -223,7 +236,7 @@ export default async function Home() {
                         <div className={css.Home__advantagesCard}>
                             <img
                                 className={css.Home__advantagesCardImage}
-                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/rub.webp"
+                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/20let.webp"
                                 alt=""
                             />
                             <div className={css.Home__advantagesCardInfo}>
@@ -232,23 +245,23 @@ export default async function Home() {
                                     color="light-primary"
                                     className={css.Home__advantagesCardTitle}
                                 >
-                                    Действительные цены
+                                    Опытные мастера
                                 </Text>
                                 <Text
                                     variant="body-2"
                                     color="light-primary"
                                     className={css.Home__advantagesCardDesc}
                                 >
-                                    На сайте указаны именно те цены, которые мы озвучим вам по
-                                    телефону и ровно по ним заключим договор на строительство. Все
-                                    заявленные акции, также действительны!
+                                    Мы строим срубы для вас с 1997-го года. Опытнейшие специалисты
+                                    являются гарантией качественного результата, наши дома и бани
+                                    служат людям десятилетиями!
                                 </Text>
                             </div>
                         </div>
                         <div className={css.Home__advantagesCard}>
                             <img
                                 className={css.Home__advantagesCardImage}
-                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/rub.webp"
+                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/pila.webp"
                                 alt=""
                             />
                             <div className={css.Home__advantagesCardInfo}>
@@ -257,23 +270,23 @@ export default async function Home() {
                                     color="light-primary"
                                     className={css.Home__advantagesCardTitle}
                                 >
-                                    Действительные цены
+                                    Собственные мощности
                                 </Text>
                                 <Text
                                     variant="body-2"
                                     color="light-primary"
                                     className={css.Home__advantagesCardDesc}
                                 >
-                                    На сайте указаны именно те цены, которые мы озвучим вам по
-                                    телефону и ровно по ним заключим договор на строительство. Все
-                                    заявленные акции, также действительны!
+                                    В любом случае, от нас вы получите наиболее выгодное
+                                    предложение. У нас собственный транспорт, техника, квоты на
+                                    добычу и даже пилорама для производства доски и бруса!
                                 </Text>
                             </div>
                         </div>
                         <div className={css.Home__advantagesCard}>
                             <img
                                 className={css.Home__advantagesCardImage}
-                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/rub.webp"
+                                src="https://moy-srub.ru/bitrix/templates/moysrub/images/search.webp"
                                 alt=""
                             />
                             <div className={css.Home__advantagesCardInfo}>
@@ -282,16 +295,16 @@ export default async function Home() {
                                     color="light-primary"
                                     className={css.Home__advantagesCardTitle}
                                 >
-                                    Действительные цены
+                                    Честный подход
                                 </Text>
                                 <Text
                                     variant="body-2"
                                     color="light-primary"
                                     className={css.Home__advantagesCardDesc}
                                 >
-                                    На сайте указаны именно те цены, которые мы озвучим вам по
-                                    телефону и ровно по ним заключим договор на строительство. Все
-                                    заявленные акции, также действительны!
+                                    Мы не скрываем процесс заготовки, сборки, обработки или отделки
+                                    срубов. Вы можете в любой момент ознакомиться с ходом работ не
+                                    только на участке, но и на делянке!
                                 </Text>
                             </div>
                         </div>
@@ -338,11 +351,25 @@ export default async function Home() {
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text variant="display-2" color="complementary">
-                                Проекты бань из бревна
+                                Проекты бань из сруба
                             </Text>
                             <div className={css.Home__projects}>
-                                {dataBath.map((item) => (
+                                {data.baths.map((item) => (
                                     <HouseCard route="bani-iz-sruba" key={item.id} item={item} />
+                                ))}
+                            </div>
+                        </div>
+                    </Card>
+                </div>
+                <div className={'base-block'}>
+                    <Card view="raised" type="container" size="l">
+                        <div className={'base-card'}>
+                            <Text variant="display-2" color="complementary">
+                                Проекты домов из сруба
+                            </Text>
+                            <div className={css.Home__projects}>
+                                {data.houses.map((item) => (
+                                    <HouseCard route="doma-iz-sruba" key={item.id} item={item} />
                                 ))}
                             </div>
                         </div>

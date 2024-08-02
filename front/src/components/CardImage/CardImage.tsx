@@ -8,19 +8,16 @@ type CardImageProps = {
     title: ReactNode;
     action: ReactNode;
     link: string;
+    image: string;
 };
 
 export const CardImage: FC<CardImageProps> = (props) => {
-    const {title, action, link} = props;
+    const {title, action, link, image} = props;
 
     return (
         <Link href={link} className={css.CardImage}>
             <div className={css.CardImage__image}>
-                <img
-                    src="https://moy-srub.ru/upload/iblock/30e/twjvp12izvzjzoadyyrcnk148ayhbt1g.webp"
-                    alt=""
-                    className={css.CardImage__imagePic}
-                />
+                <img src={image} alt="" className={css.CardImage__imagePic} />
             </div>
             <div className={css.CardImage__content}>
                 <div className={css.CardImage__title}>{title}</div>
