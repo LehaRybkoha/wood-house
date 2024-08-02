@@ -21,7 +21,7 @@ export type AppProps = {
 export const Wrapper: FC<AppProps> = ({children}) => {
     const [theme] = React.useState<Theme>(DEFAULT_THEME);
 
-    const [isMenuOpen, setMenuOpen] = useState(!(window.innerWidth < 992));
+    const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
