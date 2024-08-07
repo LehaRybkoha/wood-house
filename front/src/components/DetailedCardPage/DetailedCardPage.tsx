@@ -20,6 +20,10 @@ export const DetailedCardPage: FC = () => {
             fetch('https://volga-house.com/api/houses/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
+        } else if (window.location.pathname.includes('carcas-bani')) {
+            fetch('https://volga-house.com/api/carcas/' + params.slug)
+                .then((res) => res.json())
+                .then((data) => setBath(data));
         } else {
             fetch('https://volga-house.com/api/baths/' + params.slug)
                 .then((res) => res.json())

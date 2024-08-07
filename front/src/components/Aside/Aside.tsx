@@ -38,6 +38,11 @@ export const Aside: FC<AsideProps> = (props) => {
             icon: House,
         },
         {
+            name: 'Каркасные бани',
+            url: '/carcas-bani',
+            icon: Droplet,
+        },
+        {
             name: 'Цены на фундамент',
             url: '/tseny-na-fundament',
             icon: TagDollar,
