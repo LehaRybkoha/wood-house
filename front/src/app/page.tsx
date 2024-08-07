@@ -9,13 +9,13 @@ import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
-    const resBath = await fetch('http://194.58.126.86/api/baths', {
+    const resBath = await fetch('https://volga-house.com/api/baths', {
         mode: 'no-cors',
         headers: {
             'Cache-Control': 'no-store',
         },
     });
-    const resHouse = await fetch('http://194.58.126.86/api/houses', {
+    const resHouse = await fetch('https://volga-house.com/api/houses', {
         mode: 'no-cors',
         headers: {
             'Cache-Control': 'no-store',

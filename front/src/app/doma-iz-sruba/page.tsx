@@ -24,7 +24,7 @@ export type House = {
 };
 
 async function getData() {
-    const res = await fetch('http://194.58.126.86/api/houses', {
+    const res = await fetch('https://volga-house.com/api/houses', {
         headers: {
             'Cache-Control': 'no-store',
         },

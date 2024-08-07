@@ -26,7 +26,7 @@ export const Modal: FC = () => {
         async (values: {name: string; email: string; phone: string; comment?: string}) => {
             const {name, email, phone} = values;
 
-            await fetch('http://194.58.126.86/api/submit', {
+            await fetch('https://volga-house.com/api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

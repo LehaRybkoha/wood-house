@@ -17,11 +17,11 @@ export const DetailedCardPage: FC = () => {
 
     useEffect(() => {
         if (window.location.pathname.includes('doma-iz-sruba')) {
-            fetch('http://194.58.126.86/api/houses/' + params.slug)
+            fetch('https://volga-house.com/api/houses/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         } else {
-            fetch('http://194.58.126.86/api/baths/' + params.slug)
+            fetch('https://volga-house.com/api/baths/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         }
