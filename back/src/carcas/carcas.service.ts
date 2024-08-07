@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import * as CARCAS from '../../assets/houses-mock.json';
+import * as CARCAS from '../../assets/carcas-mock.json';
 
 type CarcasInfoItem = {
   title: string;
