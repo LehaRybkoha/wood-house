@@ -7,6 +7,7 @@ import { HousesModule } from './houses/houses.module';
 
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { CarcasModule } from './carcas/carcas.module';
 import { SubmitModule } from './submit/submit.module';
 
 @Module({
@@ -21,6 +22,7 @@ import { SubmitModule } from './submit/submit.module';
     BathsModule,
     HousesModule,
     SubmitModule,
+    CarcasModule,
   ],
   controllers: [AppController],
   providers: [AppService],
