@@ -18,25 +18,12 @@ export const Footer: FC<HeaderProps> = (props) => {
                     <div className={css.Footer__top}>
                         <div className={css.Address__List}>
                             <div className={css.Address__ListItem}>
-                                <Text variant="header-2">Москва</Text>
+                                <Text variant="header-2">Самара</Text>
                                 <Text variant="body-3">
-                                    Московская область, Дзержинское ш., вл. 7/7, участок 106, “Белая
-                                    Дача”
-                                </Text>
-                                <a className={css.Address__ListItemPhone} href="tel:+74957681709">
-                                    +7 (495) 768-17-09
-                                </a>
-                                <a className={css.Address__ListItemPhone} href="tel:+78129203245">
-                                    +7 (812) 920-32-45
-                                </a>
-                            </div>
-                            <div className={css.Address__ListItem}>
-                                <Text variant="header-2">Санкт-Петербург</Text>
-                                <Text variant="body-3">
-                                    Россия, Санкт-Петербург, улица Коллонтай, 18
+                                    Самарская область, город Самара Стара-Загора 172 А
                                 </Text>
                                 <a className={css.Address__ListItemPhone} href="tel:+78129203245">
-                                    +7 (812) 920-32-45
+                                    +7 (917) 104-91-81{' '}
                                 </a>
                                 <a className={css.Address__ListItemPhone} href="tel:+79197868745">
                                     +7 (919) 786-87-45

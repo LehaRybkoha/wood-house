@@ -87,7 +87,7 @@ export default function Contacts() {
                                         color="light-primary"
                                         className={css.Contacts__phone}
                                     >
-                                        +7 (495) 768-17-09
+                                        +7 (917) 036-71-77{' '}
                                     </Text>
                                 </Link>
                                 <Link href="tel:+78129203245">
@@ -96,7 +96,7 @@ export default function Contacts() {
                                         color="light-primary"
                                         className={css.Contacts__phone}
                                     >
-                                        +7 (812) 920-32-45
+                                        +7 (917) 104-91-81{' '}
                                     </Text>
                                 </Link>
                             </div>
@@ -172,7 +172,7 @@ export default function Contacts() {
                                         color="light-primary"
                                         className={css.Contacts__phone}
                                     >
-                                        +7 (812) 920-32-45
+                                        +7 (917) 104-91-81{' '}
                                     </Text>
                                 </Link>
                                 <Link href="tel:+79197868745">

@@ -43,7 +43,7 @@ export const Banner: FC = () => {
                                 color="light-primary"
                                 className={css.Banner__phone}
                             >
-                                +7 (495) 768-17-09
+                                +7 (917) 036-71-77
                             </Text>
                         </a>
                         <a href="tel:+74957681709" className={css.Banner__phoneLink}>
@@ -52,13 +52,10 @@ export const Banner: FC = () => {
                                 color="light-primary"
                                 className={css.Banner__phone}
                             >
-                                +7 (812) 920-32-45
+                                +7 (917) 104-91-81
                             </Text>
                         </a>
                     </div>
-                    <Text variant="header-1" color="light-primary" className={css.Banner__hint}>
-                        ООО «СК-РусСтрой» ИНН 5027296210
-                    </Text>
                 </div>
             </div>
         </div>
