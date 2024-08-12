@@ -13,10 +13,10 @@ async function bootstrap() {
     },
   });
 
-  // app.enableCors({
-  //   //Add your origins here
-  //   origin: 'http://localhost:3000',
-  // });
+   app.enableCors({
+     //Add your origins here
+     origin: 'http://localhost:3000',
+   });
 
   await app.listen('8080');
 }
