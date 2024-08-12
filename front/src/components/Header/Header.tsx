@@ -61,8 +61,7 @@ export const Header: FC<HeaderProps> = (props) => {
                     <div className={css.Header__info}>
                         <div className={css.Header__address}>
                             <Text className={css.Header__addressText}>
-                                МО, г. Котельники, Дзержинское ш., вл 7/7, п. Малоэтажная страна,
-                                д.19
+                                Самарская область, город Самара Стара-Загора 172 А
                             </Text>
                         </div>
                         <div className={css.Header__phone}>
