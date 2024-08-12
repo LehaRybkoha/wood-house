@@ -22,7 +22,7 @@ export const Footer: FC<HeaderProps> = (props) => {
                                 <Text variant="body-3">
                                     Самарская область, город Самара Стара-Загора 172 А
                                 </Text>
-                                <a className={css.Address__ListItemPhone} href="tel:+78129203245">
+                                <a className={css.Address__ListItemPhone} href="tel:+79171049181">
                                     +7 (917) 104-91-81{' '}
                                 </a>
                                 <a className={css.Address__ListItemPhone} href="tel:+79197868745">

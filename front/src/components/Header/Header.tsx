@@ -66,8 +66,11 @@ export const Header: FC<HeaderProps> = (props) => {
                         </div>
                         <div className={css.Header__phone}>
                             <Text variant="header-1" className={css.Header__phoneNumber}>
-                                <a className={css.Header__phoneNumberLink} href="tel:+74991124429">
-                                    8 (499) 112-44-29
+                                <a className={css.Header__phoneNumberLink} href="tel:+79171049181">
+                                    +7 (917) 104-91-81
+                                </a>
+                                <a className={css.Header__phoneNumberLink} href="tel:+79197868745">
+                                    +7 (919) 786-87-45
                                 </a>
                             </Text>
                             <Link className={css.Header__contacts} href="/contacts">
