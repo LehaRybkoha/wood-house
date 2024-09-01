@@ -7,11 +7,7 @@ import css from './Banner.module.scss';
 export const Banner: FC = () => {
     return (
         <div className={css.Banner}>
-            <img
-                src="https://moy-srub.ru/upload/resize_cache/iblock/de1/1280_700_2/4tft8d0fzwvjsxmsphdnzw1z0l9zqgv5.jpg"
-                alt=""
-                className={css.Banner__image}
-            />
+            <img src="/house.png" alt="" className={css.Banner__image} />
             <div className={css.Banner__aside}>
                 <div className={css.Banner__asideBlock}>
                     <Text variant="header-1" color="light-primary" className={css.Banner__title}>

@@ -7,7 +7,7 @@ import css from './Promotion.module.scss';
 export const Promotion: FC = () => {
     return (
         <div className={css.Promotion}>
-            <Link href="/kredit" className={css.Promotion__block}>
+            {/* <Link href="/kredit" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}
                     src="https://moy-srub.ru/images/cred.webp"
@@ -42,7 +42,7 @@ export const Promotion: FC = () => {
                         Хотите заказать сруб и копите? <br /> Купите сейчас и ждите усадку!
                     </Text>
                 </div>
-            </Link>
+            </Link> */}
             <Link href="/rubanok" className={css.Promotion__block}>
                 <img
                     className={css.Promotion__image}

@@ -5,6 +5,7 @@ import {FC, useCallback} from 'react';
 import css from './Modal.module.scss';
 
 import {modalStore, toggleModal} from '@/store/modalStore';
+import {ENDPOINT} from '@/vars';
 import {Xmark} from '@gravity-ui/icons';
 import {Button, Icon, Modal as ModalG, Text, TextArea, TextInput} from '@gravity-ui/uikit';
 import {useStore} from '@tanstack/react-store';
@@ -26,7 +27,7 @@ export const Modal: FC = () => {
         async (values: {name: string; email: string; phone: string; comment?: string}) => {
             const {name, email, phone} = values;
 
-            await fetch('https://volga-house.com/api/submit', {
+            await fetch(ENDPOINT + 'api/submit', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',

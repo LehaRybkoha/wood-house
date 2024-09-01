@@ -7,6 +7,7 @@ import css from './DetailedCardPage.module.scss';
 
 import {Bath} from '@/app/bani-iz-sruba/page';
 import {toggleModal} from '@/store/modalStore';
+import {ENDPOINT} from '@/vars';
 import cx from 'classnames';
 import {useParams} from 'next/navigation';
 import {DetailedCardPageSlider} from './DetailedCardPageSlider';
@@ -17,15 +18,15 @@ export const DetailedCardPage: FC = () => {
 
     useEffect(() => {
         if (window.location.pathname.includes('doma-iz-sruba')) {
-            fetch('https://volga-house.com/api/houses/' + params.slug)
+            fetch(ENDPOINT + 'api/houses/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         } else if (window.location.pathname.includes('carcas-bani')) {
-            fetch('https://volga-house.com/api/carcas/' + params.slug)
+            fetch(ENDPOINT + 'api/carcas/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         } else {
-            fetch('https://volga-house.com/api/baths/' + params.slug)
+            fetch(ENDPOINT + 'api/baths/' + params.slug)
                 .then((res) => res.json())
                 .then((data) => setBath(data));
         }

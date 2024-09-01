@@ -1,5 +1,6 @@
 import {ButtonClient} from '@/components/ButtonClient/ButtonClient';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
+import housesJson from '@/mocks/houses-mock.json';
 import {Card, Text} from '@gravity-ui/uikit';
 import css from './styles.module.scss';
 
@@ -23,25 +24,25 @@ export type House = {
     complection: string[];
 };
 
-async function getData() {
-    const res = await fetch('https://volga-house.com/api/houses', {
-        headers: {
-            'Cache-Control': 'no-store',
-        },
-    });
-    // The return value is *not* serialized
-    // You can return Date, Map, Set, etc.
+// async function getData() {
+// const res = await fetch(ENDPOINT + 'api/houses', {
+//     headers: {
+//         'Cache-Control': 'no-store',
+//     },
+// });
+// The return value is *not* serialized
+// You can return Date, Map, Set, etc.
 
-    if (!res.ok) {
-        // This will activate the closest `error.js` Error Boundary
-        return [];
-    }
+// if (!res.ok) {
+// This will activate the closest `error.js` Error Boundary
+// return [];
+// }
 
-    return res.json();
-}
+// return res.json();
+// }
 
 export default async function Houses() {
-    const houses: House[] = await getData();
+    const houses = housesJson as unknown as House[];
 
     return (
         <div>
@@ -123,7 +124,7 @@ export default async function Houses() {
                                         marginLeft: 16,
                                     }}
                                 >
-                                    Территория бесплатной доставки и сборки срубов
+                                    Территория доставки и сборки срубов
                                 </Text>
                                 <Text
                                     variant="body-3"
@@ -137,13 +138,7 @@ export default async function Houses() {
                                     доставка для вас не будет ничего стоить:
                                     <br />
                                     <ul>
-                                        <li>
-                                            В радиусе 100 км от Москвы (МКАД), в некоторых
-                                            направлениях до 350 км;
-                                        </li>
-                                        <li>В Смоленскую и Псковскую области;</li>
-                                        <li>На юг Ленинградской области;</li>
-                                        <li>Калужскую, Тульскую, Брянскую и Тверскую области.</li>
+                                        <li>В Самарскую и Ульяновскую области</li>
                                     </ul>
                                     Во всех остальных случаях доставка рассчитывается индивидуально.
                                 </Text>

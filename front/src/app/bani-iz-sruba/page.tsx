@@ -1,5 +1,6 @@
 import {ButtonClient} from '@/components/ButtonClient/ButtonClient';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
+import bathsJson from '@/mocks/baths-mock.json';
 import {Card, Text} from '@gravity-ui/uikit';
 import Link from 'next/link';
 import css from './styles.module.scss';
@@ -24,22 +25,22 @@ export type Bath = {
     complection: string[];
 };
 
-async function getData() {
-    const res = await fetch('https://volga-house.com/api/baths', {
-        headers: {
-            'Cache-Control': 'no-store',
-        },
-    });
+// async function getData() {
+// const res = await fetch(ENDPOINT + 'api/baths', {
+//     headers: {
+//         'Cache-Control': 'no-store',
+//     },
+// });
 
-    if (!res.ok) {
-        return [];
-    }
+// if (!res.ok) {
+//     return [];
+// }
 
-    return res.json();
-}
+// return bathsjson;
+// }
 
 export default async function Baths() {
-    const baths: Bath[] = await getData();
+    const baths = bathsJson as unknown as Bath[];
 
     return (
         <div>
@@ -60,13 +61,8 @@ export default async function Baths() {
                             <Text variant="body-3" color="dark-complementary" className="base-desc">
                                 Для вашего удобства мы приводим подробный прайс-лист на стандартные
                                 размеры и комплектацию срубов. Вы можете самостоятельно произвести
-                                расчёт строительства бани. Мы стараемся сделать всё, чтобы наше
-                                сотрудничество было удобным, в первую очередь, для вас. Но иногда мы
-                                бессильны, например, ко всем баням до размера 6x4 м мы предлагаем
-                                бесплатный столбчатый фундамент, но загрузить в бортовую машину
-                                песок, требуемый для устройства такого типа фундамента, просто
-                                невозможно. Также, вы можете перейти сразу к готовым проектам
-                                разработанным для вас нашими дизайнерами.
+                                расчёт строительства бани и также, вы можете перейти сразу к готовым
+                                проектам разработанным для вас нашими дизайнерами.
                             </Text>
                             <div className={css.Baths__actions}>
                                 <Link href="/bani-iz-sruba#lap-srub">
@@ -123,7 +119,7 @@ export default async function Baths() {
                                         marginLeft: 16,
                                     }}
                                 >
-                                    Территория бесплатной доставки и сборки срубов
+                                    Территория доставки и сборки срубов
                                 </Text>
                                 <Text
                                     variant="body-3"
@@ -137,13 +133,7 @@ export default async function Baths() {
                                     доставка для вас не будет ничего стоить:
                                     <br />
                                     <ul>
-                                        <li>
-                                            В радиусе 100 км от Москвы (МКАД), в некоторых
-                                            направлениях до 350 км;
-                                        </li>
-                                        <li>В Смоленскую и Псковскую области;</li>
-                                        <li>На юг Ленинградской области;</li>
-                                        <li>Калужскую, Тульскую, Брянскую и Тверскую области.</li>
+                                        <li>В Самарскую и Ульяновскую области</li>
                                     </ul>
                                     Во всех остальных случаях доставка рассчитывается индивидуально.
                                 </Text>

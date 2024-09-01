@@ -3,19 +3,20 @@ import {ButtonClient} from '@/components/ButtonClient/ButtonClient';
 import {CardImage} from '@/components/CardImage/CardImage';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Promotion} from '@/components/Promotion/Promotion';
+import {ENDPOINT} from '@/vars';
 import {Card, Text} from '@gravity-ui/uikit';
 import {Bath} from './bani-iz-sruba/page';
 import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
 async function getData() {
-    const resBath = await fetch('https://volga-house.com/api/baths', {
+    const resBath = await fetch(ENDPOINT + 'api/baths', {
         mode: 'no-cors',
         headers: {
             'Cache-Control': 'no-store',
         },
     });
-    const resHouse = await fetch('https://volga-house.com/api/houses', {
+    const resHouse = await fetch(ENDPOINT + 'api/houses', {
         mode: 'no-cors',
         headers: {
             'Cache-Control': 'no-store',
@@ -52,15 +53,12 @@ export default async function Home() {
                                 Срубы ручной рубки с доставкой и сборкой
                             </Text>
                             <Text variant="body-3" color="dark-complementary" className="base-desc">
-                                Наша компания уже более 20 лет работает для вас. Индивидуальный
+                                Наша компания уже более 7 лет работает для вас. Индивидуальный
                                 подход к каждому проекту позволит вам получить действительно
                                 качественный сруб. В нашей работе мы используем отборный строевой
-                                лес, объем которого ограничен, но мы получаем прямые квоты на добычу
-                                и выбор делянок. Бесплатная доставка и сборка рубленных домов и бань
-                                производится в Москве и области, Санкт-Петербурге и области,
-                                Калужской, Тульской, Смоленской, Тверской, Псковской и Брянской
-                                областях. Доставка в другие регионы РФ и республику Белоруссию
-                                согласуются отдельно.
+                                лес. Доставка и сборка рубленных домов и бань производится в
+                                Самарской и Ульяновской области . Доставка и сборка в другие регионы
+                                РФ согласуются отдельно.
                             </Text>
                         </div>
                     </Card>

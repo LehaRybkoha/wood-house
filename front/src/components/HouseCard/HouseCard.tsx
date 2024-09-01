@@ -10,6 +10,7 @@ import css from './HouseCard.module.scss';
 
 type HouseCardProps = {
     item: Bath;
+    img?: string;
     route: string;
 };
 
@@ -93,8 +94,20 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                     </ButtonClient>
                 </div>
             </div>
-            <div>
-                <img className={css.HouseCard__image} src={item.src} alt="" />
+            <div className={css.HouseCard__imgWrap}>
+                {route === 'carcas-bani' ? (
+                    <img
+                        className={css.HouseCard__image}
+                        src={`/${route}/${item.id}/1.jpg`}
+                        alt=""
+                    />
+                ) : (
+                    <img
+                        className={css.HouseCard__image}
+                        src={`/${route}/${item.id}/1.webp`}
+                        alt=""
+                    />
+                )}
             </div>
         </div>
     );
