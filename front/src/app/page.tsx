@@ -3,37 +3,41 @@ import {ButtonClient} from '@/components/ButtonClient/ButtonClient';
 import {CardImage} from '@/components/CardImage/CardImage';
 import {HouseCard} from '@/components/HouseCard/HouseCard';
 import {Promotion} from '@/components/Promotion/Promotion';
-import {ENDPOINT} from '@/vars';
+import bathsJson from '@/mocks/baths-mock.json';
+import housesJson from '@/mocks/houses-mock.json';
 import {Card, Text} from '@gravity-ui/uikit';
 import {Bath} from './bani-iz-sruba/page';
 import {House} from './doma-iz-sruba/page';
 import css from './styles.module.scss';
 
-async function getData() {
-    const resBath = await fetch(ENDPOINT + 'api/baths', {
-        mode: 'no-cors',
-        headers: {
-            'Cache-Control': 'no-store',
-        },
-    });
-    const resHouse = await fetch(ENDPOINT + 'api/houses', {
-        mode: 'no-cors',
-        headers: {
-            'Cache-Control': 'no-store',
-        },
-    });
+// async function getData() {
+//     const resBath = await fetch(ENDPOINT + 'api/baths', {
+//         mode: 'no-cors',
+//         headers: {
+//             'Cache-Control': 'no-store',
+//         },
+//     });
+//     const resHouse = await fetch(ENDPOINT + 'api/houses', {
+//         mode: 'no-cors',
+//         headers: {
+//             'Cache-Control': 'no-store',
+//         },
+//     });
 
-    const dataBath: Bath[] = await resBath.json();
-    const dataHouses: House[] = await resHouse.json();
+//     const dataBath: Bath[] = await resBath.json();
+//     const dataHouses: House[] = await resHouse.json();
 
-    return {
-        baths: dataBath ?? [],
-        houses: dataHouses ?? [],
-    };
-}
+//     return {
+//         baths: dataBath ?? [],
+//         houses: dataHouses ?? [],
+//     };
+// }
 
 export default async function Home() {
-    const data = await getData();
+    const data = {
+        baths: bathsJson as unknown as Bath[],
+        houses: housesJson as unknown as House[],
+    };
 
     return (
         <div className={css.Home}>
