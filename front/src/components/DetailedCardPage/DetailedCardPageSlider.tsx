@@ -7,12 +7,13 @@ import css from './DetailedCardPage.module.scss';
 
 type DetailedCardPageSliderProps = {
     bath: Bath;
+    img: string;
 };
 
 export const DetailedCardPageSlider: FC<DetailedCardPageSliderProps> = (props) => {
-    const {bath} = props;
+    const {bath, img} = props;
 
-    const [mainImage, setMainImage] = useState(bath.images[0]);
+    const [mainImage, setMainImage] = useState(img + '/1.jpg');
 
     const handleImageUpdate = useCallback((src: string) => {
         setMainImage(src);
@@ -30,16 +31,16 @@ export const DetailedCardPageSlider: FC<DetailedCardPageSliderProps> = (props) =
                 </a>
             </div>
             <div className={css.DetailedCardPage__sliderList}>
-                {bath.images.map((src) => {
+                {bath.images.map((src, idx) => {
                     return (
                         <div
                             key={src}
                             className={css.DetailedCardPage__sliderListItem}
-                            onClick={() => handleImageUpdate(src)}
+                            onClick={() => handleImageUpdate(img + `/${idx + 1}.jpg`)}
                         >
                             <img
                                 className={css.DetailedCardPage__sliderListItemImage}
-                                src={src}
+                                src={img + `/${idx + 1}.jpg`}
                                 alt=""
                             />
                         </div>

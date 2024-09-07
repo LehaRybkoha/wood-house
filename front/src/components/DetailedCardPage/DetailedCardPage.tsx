@@ -1,36 +1,58 @@
 'use client';
 
 import {Card, Text} from '@gravity-ui/uikit';
-import {FC, useEffect, useState} from 'react';
+import {FC, useEffect, useMemo, useState} from 'react';
 import {ButtonClient} from '../ButtonClient/ButtonClient';
 import css from './DetailedCardPage.module.scss';
 
 import {Bath} from '@/app/bani-iz-sruba/page';
 import {toggleModal} from '@/store/modalStore';
-import {ENDPOINT} from '@/vars';
 import cx from 'classnames';
-import {useParams} from 'next/navigation';
+import {useParams, usePathname} from 'next/navigation';
 import {DetailedCardPageSlider} from './DetailedCardPageSlider';
+
+import {Carcas} from '@/app/carcas-bani/page';
+import {House} from '@/app/doma-iz-sruba/page';
+import bathsJson from '@/mocks/baths-mock.json';
+import carcasJson from '@/mocks/carcas-mock.json';
+import housesJson from '@/mocks/houses-mock.json';
+
 export const DetailedCardPage: FC = () => {
     const params = useParams();
+    const pathname = usePathname();
 
-    const [bath, setBath] = useState<Bath | null>(null);
+    const [bath, setBath] = useState<Bath | House | Carcas | null>(null);
+
+    const currentImage = useMemo(() => {
+        if (!bath) {
+            return '';
+        }
+        if (pathname.includes('doma-iz-sruba')) {
+            return `/doma-iz-sruba/${bath.id}`;
+        } else if (pathname.includes('carcas-bani')) {
+            return `/carcas-bani/${bath.id}`;
+        } else {
+            return `/bani-iz-sruba/${bath.id}`;
+        }
+    }, [bath]);
 
     useEffect(() => {
-        if (window.location.pathname.includes('doma-iz-sruba')) {
-            fetch(ENDPOINT + 'api/houses/' + params.slug)
-                .then((res) => res.json())
-                .then((data) => setBath(data));
-        } else if (window.location.pathname.includes('carcas-bani')) {
-            fetch(ENDPOINT + 'api/carcas/' + params.slug)
-                .then((res) => res.json())
-                .then((data) => setBath(data));
+        let dataMock = null;
+        if (pathname.includes('doma-iz-sruba')) {
+            dataMock = housesJson as unknown as House[];
+        } else if (pathname.includes('carcas-bani')) {
+            dataMock = carcasJson as unknown as Carcas[];
         } else {
-            fetch(ENDPOINT + 'api/baths/' + params.slug)
-                .then((res) => res.json())
-                .then((data) => setBath(data));
+            dataMock = bathsJson as unknown as Bath[];
         }
-    }, [params]);
+
+        if (!dataMock) {
+            return;
+        }
+
+        const founded = dataMock.find((item) => item.id === Number(params.slug));
+        setBath(founded);
+    }, [params, pathname, setBath]);
 
     if (!bath) {
         return null;
@@ -46,7 +68,7 @@ export const DetailedCardPage: FC = () => {
             <div className={css.DetailedCardPage__content}>
                 <div className={css.DetailedCardPage__main}>
                     <div className={css.DetailedCardPage__left}>
-                        <DetailedCardPageSlider bath={bath} />
+                        <DetailedCardPageSlider bath={bath} img={currentImage} />
                     </div>
                     <div className={css.DetailedCardPage__right}>
                         <div className={css.DetailedCardPage__details}>

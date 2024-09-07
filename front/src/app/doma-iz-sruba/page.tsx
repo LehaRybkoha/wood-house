@@ -592,7 +592,7 @@ export default async function Houses() {
                         </div>
                     </Card>
                 </div>
-                <div className={'base-block'}>
+                {/* <div className={'base-block'}>
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text
@@ -640,7 +640,7 @@ export default async function Houses() {
                             </Text>
                         </div>
                     </Card>
-                </div>
+                </div> */}
             </div>
         </div>
     );

@@ -162,7 +162,7 @@ export default async function Home() {
                                 />
                                 <CardImage
                                     link="/blog/razlichiya-i-skhozhest-russkoy-bani-i-finskoy-sauny"
-                                    image="https://moy-srub.ru/upload/iblock/f85/67hhienkxapy9e221lv3khyf4x6aofx1.webp"
+                                    image="/fin.jpg"
                                     title={
                                         <Text variant="header-1" color="complementary">
                                             Различия и схожесть русской бани и финской сауны
@@ -180,7 +180,7 @@ export default async function Home() {
                                 />
                                 <CardImage
                                     link="/blog/preimushchestva-vybora-sruba-iz-dereva/"
-                                    image="https://moy-srub.ru/upload/iblock/7df/rm06wzrbgf3gm0blzcouiydcoyojni54.webp"
+                                    image="/bani-iz-sruba/1/1.jpg"
                                     title={
                                         <Text variant="header-1" color="complementary">
                                             Преимущества выбора сруба из дерева

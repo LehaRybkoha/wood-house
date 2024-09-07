@@ -10,6 +10,7 @@
 
 .DetailedCardPage__sliderListItemImage {
     width: 100%;
+    height: 80px;
 }
 
 .DetailedCardPage__sliderListItem {
@@ -43,6 +44,7 @@
 
 .DetailedCardPage__sliderMainImageImg {
     width: 100%;
+    object-fit: cover;
 }
 
 .DetailedCardPage__right {

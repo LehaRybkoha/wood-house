@@ -95,19 +95,7 @@ export const HouseCard: FC<HouseCardProps> = (props) => {
                 </div>
             </div>
             <div className={css.HouseCard__imgWrap}>
-                {route === 'carcas-bani' ? (
-                    <img
-                        className={css.HouseCard__image}
-                        src={`/${route}/${item.id}/1.jpg`}
-                        alt=""
-                    />
-                ) : (
-                    <img
-                        className={css.HouseCard__image}
-                        src={`/${route}/${item.id}/1.webp`}
-                        alt=""
-                    />
-                )}
+                <img className={css.HouseCard__image} src={`/${route}/${item.id}/1.jpg`} alt="" />
             </div>
         </div>
     );

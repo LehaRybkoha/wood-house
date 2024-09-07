@@ -12,11 +12,7 @@ export default function Baths() {
                                 Различия и схожесть русской бани и финской сауны
                             </Text>
                             <div className={css.Baths__heading}>
-                                <img
-                                    className={css.Baths__image}
-                                    src="https://moy-srub.ru/upload/iblock/09e/dripfyjwrwqkefj5b7kx41q263it6cib.webp"
-                                    alt=""
-                                />
+                                <img className={css.Baths__image} src="/fin.jpg" alt="" />
                                 <div>
                                     <Text
                                         variant="body-3"
