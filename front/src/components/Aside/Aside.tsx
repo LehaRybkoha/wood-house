@@ -14,15 +14,16 @@ import {Icon, Text} from '@gravity-ui/uikit';
 import cx from 'classnames';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
-import {FC} from 'react';
+import {DispatchWithoutAction, FC} from 'react';
 import css from './Aside.module.scss';
 
 type AsideProps = {
     className: string;
+    toggleMenu: DispatchWithoutAction;
 };
 
 export const Aside: FC<AsideProps> = (props) => {
-    const {className} = props;
+    const {toggleMenu, className} = props;
 
     const pathname = usePathname();
 
@@ -89,6 +90,7 @@ export const Aside: FC<AsideProps> = (props) => {
             <div className={css.Aside__content}>
                 {navs.map((item, idx) => (
                     <Link
+                        onClick={() => toggleMenu()}
                         href={item.url}
                         className={cx(css.Aside__item, {
                             [css.Aside__item_active]: item.url === pathname,
