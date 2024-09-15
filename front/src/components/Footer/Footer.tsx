@@ -25,8 +25,8 @@ export const Footer: FC<HeaderProps> = (props) => {
                                 <a className={css.Address__ListItemPhone} href="tel:+79171049181">
                                     +7 (917) 104-91-81{' '}
                                 </a>
-                                <a className={css.Address__ListItemPhone} href="tel:+79197868745">
-                                    +7 (919) 786-87-45
+                                <a className={css.Address__ListItemPhone} href="tel:+79170367177">
+                                    +7 (917) 036-71-77
                                 </a>
                             </div>
                         </div>

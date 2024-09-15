@@ -66,7 +66,7 @@ export default function Contacts() {
                     <Card view="raised" type="container" size="l">
                         <div className={'base-card'}>
                             <Text variant="display-2" color="complementary" className="main-title">
-                                Москва и Московская область
+                                Самара и Самарская область
                             </Text>
                         </div>
                     </Card>
@@ -127,99 +127,13 @@ export default function Contacts() {
                                 Адрес
                             </Text>
                             <Text variant="body-3" color="dark-secondary">
-                                Московская область, Дзержинское ш., вл. 7/7, участок 106, “Белая
-                                Дача”
-                                <br />
-                                Внимание, по техническим причинам до 22.02.24 выставочный образец
-                                закрыт, работаем онлайн!
-                                <br />
-                                Посещение выставочного образца по вторникам и четвергам строго по
-                                согласованию!
-                                <br />
+                                Самарская область, город Самара Стара- Загора 172 А
                             </Text>
                         </div>
                     </Card>
                 </div>
                 <iframe
-                    src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.850182%2C55.653351&mode=usermaps&source=mapframe&um=constructor%3A081caaae5ba1a85c71487d89740a461e336fc23cce7cd319e112ed7ed1e86a45&utm_source=mapframe&z=20"
-                    height="500"
-                    frameBorder={1}
-                    allowFullScreen={true}
-                ></iframe>
-
-                <div className={'base-block'}>
-                    <Card view="raised" type="container" size="l">
-                        <div className={'base-card'}>
-                            <Text variant="display-2" color="complementary" className="main-title">
-                                Санкт-Петербург и Ленинградская область
-                            </Text>
-                        </div>
-                    </Card>
-                </div>
-                <div className={'base-block'}>
-                    <Card view="raised" type="container" size="l">
-                        <div className={'base-card'}>
-                            <Text variant="header-1" className="main-title">
-                                Телефоны
-                            </Text>
-                            <div className={css.Contacts__phones}>
-                                <Link href="tel:+78129203245">
-                                    <Text
-                                        variant="subheader-3"
-                                        color="light-primary"
-                                        className={css.Contacts__phone}
-                                    >
-                                        +7 (917) 104-91-81{' '}
-                                    </Text>
-                                </Link>
-                                <Link href="tel:+79197868745">
-                                    <Text
-                                        variant="subheader-3"
-                                        color="light-primary"
-                                        className={css.Contacts__phone}
-                                    >
-                                        +7 (919) 786-87-45
-                                    </Text>
-                                </Link>
-                            </div>
-                            <Text
-                                variant="header-1"
-                                color="complementary"
-                                className="main-title"
-                                style={{
-                                    marginTop: 16,
-                                }}
-                            >
-                                Email
-                            </Text>
-                            <Link href="mailto:info@moy-srub.ru">
-                                <Text
-                                    variant="subheader-3"
-                                    color="light-primary"
-                                    className={css.Contacts__phone}
-                                >
-                                    info@moy-srub.ru
-                                </Text>
-                            </Link>
-                            <Text
-                                variant="header-1"
-                                color="complementary"
-                                className="main-title"
-                                style={{
-                                    marginTop: 16,
-                                }}
-                            >
-                                Адрес в Санкт-Петербурге
-                            </Text>
-                            <Text variant="body-3" color="dark-secondary">
-                                Россия, Санкт-Петербург, улица Коллонтай, 18
-                                <br />! Просьба ! Перед приездом, обязательно звоните !
-                            </Text>
-                        </div>
-                    </Card>
-                </div>
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=37.850182%2C55.653351&mode=usermaps&source=mapframe&um=constructor%3A081caaae5ba1a85c71487d89740a461e336fc23cce7cd319e112ed7ed1e86a45&utm_source=mapframe&z=20"
+                    src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=50.241327%2C53.249990&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM4NDI3NBJF0KDQvtGB0YHQuNGPLCDQodCw0LzQsNGA0LAsINGD0LvQuNGG0LAg0KHRgtCw0YDQsC3Ql9Cw0LPQvtGA0LAsIDE3MtCQIgoNH_dIQhX-_1RC&z=17.21"
                     height="500"
                     frameBorder={1}
                     allowFullScreen={true}

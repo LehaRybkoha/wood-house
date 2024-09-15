@@ -1,1 +1,1 @@
-export const ENDPOINT = 'https://localhost:8080/';
+export const ENDPOINT = 'https://volga-house.com/';
